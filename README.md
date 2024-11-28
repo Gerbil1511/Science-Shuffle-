@@ -98,3 +98,39 @@ As we moved into the implementation phase, we focused on accurately translating 
 
 ![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
 
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## Features
+add some information about the features here
+
+### Navigation
+how toplay -instructions modal
+
+### Game board
+boardgame area construction with reset board/reset game button
+
+### Game Cards
+Symbol/Description Cards with hover/'clicked' feedback, 
+
+### Buttons
+add some information about the buttons here, shuffle button
+ (background shadow/glow on hover and a little bounce on selected cards)????
+
+### Inputs 
+add info about any inputs e.g. the name input with js validation to handle empty inputs
+
+### Scores
+Updated score with feedback message/ Number of moves counter?
+
+### Footer
+Footer with social links and copyright info, any other info?
+
+### Responsive Design
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+### Future Features
+add some inforamtion about future features
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
