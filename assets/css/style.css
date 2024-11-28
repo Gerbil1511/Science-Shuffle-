@@ -19,7 +19,8 @@ body {
     margin: auto; /* centers the game board */
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #2ed14d; /* can change this to a different color */
+    perspective: 1000px; /* perspective for 3D effect */
+    border: 2px solid #2ed14d; /* can change this to a different color */ /* Note to be removed later */
 }
 
 .hazard-card {
@@ -28,12 +29,18 @@ body {
     margin: 5px;
     position: relative; /* allows for absolute positioning of front and back faces */
     transform: scale(1); /* default size of the card - starting size for scaling*/
+    transform-style: preserve-3d; /* allows for 3D rotation */
+    transition: transform 0.5s; /* smooths out the transition */
 }
 
 /* click effect to the hazard card */
-.memory-card: active { /* when the card is clicked */
+.hazard-card: active { /* when the card is clicked */
     transform: scale(0.97); /* shrinks the card */
     transition: transform 0.2s; /* smooths out the transition */
+}
+
+.hazard-card.flip {
+    transform: rotateY(180deg); /* flips the card */
 }
 
 .front-face,
@@ -43,5 +50,9 @@ body {
     padding: 20px;
     position: absolute; /* allows for absolute positioning of front and back faces */
     border: 2px solid #e63119; /* can change this to a different color */
+backface-visibility: hidden; /* hides the back face of the card */
+}
 
+.front-face {
+  transform: rotateY('180deg'); /* flips the front face */
 }
