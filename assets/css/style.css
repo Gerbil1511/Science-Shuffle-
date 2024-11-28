@@ -9,7 +9,7 @@ body {
     height: 100vh;
     /* do we want this the full height of the viewport? if not change % to show other buttons */
     display: flex;
-    background: blueviolet
+    background: #8a2be2
         /* change this to a different color with fade/swirl effects for interest */
 }
 
@@ -19,8 +19,7 @@ body {
     margin: auto; /* centers the game board */
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #limegreen;
-    /* can change this to a different color */
+    border: 2px solid #2ed14d; /* can change this to a different color */
 }
 
 .hazard-card {
@@ -43,7 +42,6 @@ body {
     height: 100%;
     padding: 20px;
     position: absolute; /* allows for absolute positioning of front and back faces */
-    border: 2px solid #deeppink;
-    /* can change this to a different color */
+    border: 2px solid #e63119; /* can change this to a different color */
 
 }
