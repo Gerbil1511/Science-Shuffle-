@@ -1,6 +1,6 @@
 # Science Shuffle
 
-![Wireframe](https://via.placeholder.com/468x300?text=Live+Site+Here)
+![Live Site](https://via.placeholder.com/468x300?text=Live+Site+Here)
 
 <p>
 | <a href="https://gerbil1511.........../" target="_blank">Live Project</a> |
@@ -58,5 +58,88 @@ Science Shuffle is a revision tool for students stuyding (subjects) at the (ages
 * [Credits and Acknowledgements](#credits-and-acknowledgements)
   - [Credits](#credits)
   - [Acknowledgements](#acknowledgements)
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## PROJECT OUTLINE
+
+Some text here to outline the project proposal, idease, target audeince, user needs, main features
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## PROJECT PLANNING
+
+### UX Design
+
+To ensure our project was user-centric, we began by conducting thorough user research to gather insights and understand the target audience’s needs. This foundational step informed the creation of wireframes for the main page(s), where we meticulously defined the layout and user flow to provide a seamless experience. We then determined a cohesive thematic style that visually represented the website’s intended appearance, incorporating appropriate colours, typography, and design elements. Throughout the process, we collaborated closely to ensure the feasibility of our design concepts. This included providing essential design assets, such as fonts, images and icons, required for the website’s implementation.
+
+As we moved into the implementation phase, we focused on accurately translating the design into HTML and CSS. Usability testing was conducted across various devices to guarantee a consistent and intuitive user experience. We conducted comprehensive usability testing sessions, gathering feedback from real users to guide further improvements. Regular reviews were carried out to verify that the website’s design aligned with the initial wireframes and mockups, ensuring consistency and coherence. 
+
+### User Stories
+
+### Fonts
+
+### Images
+
+### Colours
+
+### Wireframes
+
+- Mobile
+
+![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+
+- Tablet
+
+![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+
+- Desktop
+
+![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## Features
+add some information about the features here
+
+### Navigation
+how toplay -instructions modal
+
+### Game board
+boardgame area construction with reset board/reset game button
+
+### Game Cards
+Symbol/Description Cards with hover/'clicked' feedback, 
+
+### Buttons
+add some information about the buttons here, shuffle button
+ (background shadow/glow on hover and a little bounce on selected cards)????
+
+### Inputs 
+add info about any inputs e.g. the name input with js validation to handle empty inputs
+
+### Scores
+Updated score with feedback message/ Number of moves counter?
+
+### Footer
+Footer with social links and copyright info, any other info?
+
+### Responsive Design
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+### Future Features
+add some inforamtion about future features
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## Agile Methodology
+
+Throughout this project, our team implemented Agile methodology by using a Kanban board to efficiently manage tasks and ensure a smooth workflow. Utilizing GitHub Project Boards, we set up various user issues, assigning them to team members based on their expertise and availability. This allowed us to visually track the progress of each task, identify bottlenecks, and prioritize work effectively. 
+
+By continuously updating the board and holding regular stand-ups, we maintained clear communication and quickly adapted to any changes, ensuring that we delivered high-quality results in a timely manner. Additionally, the use of GitHub Issues enabled us to document each task with detailed descriptions, acceptance criteria, and labels for easy categorization. This structured approach facilitated clear accountability and enhanced collaboration within the team, helping us achieve our project goals efficiently. 
+
+Before deployment, we verified that all the "must-have" and "should-have" tasks on the Kanban board were completed and the web app was ready for launch. The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. All team members contributed to the preparation of the final presentation, ensuring comprehensive coverage of all project aspects. 
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
