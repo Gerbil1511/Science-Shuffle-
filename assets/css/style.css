@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*shrinks content to fit within the box */
+}
+
+body {
+    height: 100vh;
+    /* do we want this the full height of the viewport? if not change % to show other buttons */
+    display: flex;
+    background: blueviolet
+        /* change this to a different color with fade/swirl effects for interest */
+}
+
+.hazard-game {
+    width: 640px;
+    height: 640px;
+    margin: auto; /* centers the game board */
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #limegreen;
+    /* can change this to a different color */
+}
+
+.hazard-card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    position: relative; /* allows for absolute positioning of front and back faces */
+    transform: scale(1); /* default size of the card - starting size for scaling*/
+}
+
+/* click effect to the hazard card */
+.memory-card: active { /* when the card is clicked */
+    transform: scale(0.97); /* shrinks the card */
+    transition: transform 0.2s; /* smooths out the transition */
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute; /* allows for absolute positioning of front and back faces */
+    border: 2px solid #deeppink;
+    /* can change this to a different color */
+
+}
