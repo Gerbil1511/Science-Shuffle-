@@ -34,7 +34,7 @@ body {
 }
 
 /* click effect to the hazard card */
-.hazard-card: active { /* when the card is clicked */
+.hazard-card:active { /* when the card is clicked */
     transform: scale(0.97); /* shrinks the card */
     transition: transform 0.2s; /* smooths out the transition */
 }
