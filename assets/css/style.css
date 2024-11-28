@@ -30,13 +30,13 @@ body {
     position: relative; /* allows for absolute positioning of front and back faces */
     transform: scale(1); /* default size of the card - starting size for scaling*/
     transform-style: preserve-3d; /* allows for 3D rotation */
-    transition: transform 0.5s; /* smooths out the transition */
+    transition: transform .5s; /* smooths out the transition */
 }
 
 /* click effect to the hazard card */
 .hazard-card:active { /* when the card is clicked */
-    transform: scale(0.97); /* shrinks the card */
-    transition: transform 0.2s; /* smooths out the transition */
+    transform: scale(.97); /* shrinks the card */
+    transition: transform .2s; /* smooths out the transition */
 }
 
 .hazard-card.flip {
@@ -50,9 +50,9 @@ body {
     padding: 20px;
     position: absolute; /* allows for absolute positioning of front and back faces */
     border: 2px solid #e63119; /* can change this to a different color */
-backface-visibility: hidden; /* hides the back face of the card */
+    backface-visibility: hidden; /* hides the back face of the card */
 }
 
 .front-face {
-  transform: rotateY('180deg'); /* flips the front face */
+  transform: rotateY(180deg); /* flips the front face */
 }
