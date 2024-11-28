@@ -71,10 +71,9 @@ Some text here to outline the project proposal, idease, target audeince, user ne
 
 ### UX Design
 
-To ensure our project was user-centric, we began by conducting thorough user research to gather insights and understand the target audience’s needs. This foundational step informed the creation of wireframes for the main pages, where we meticulously defined the layout and user flow to provide a seamless experience. We then determined a cohesive thematic style that visually represented the website’s intended appearance, incorporating appropriate colours, typography, and design elements. Throughout the process, we collaborated closely to ensure the feasibility of our design concepts. This included providing essential design assets, such as images and icons, required for the website’s implementation.
+To ensure our project was user-centric, we began by conducting thorough user research to gather insights and understand the target audience’s needs. This foundational step informed the creation of wireframes for the main page(s), where we meticulously defined the layout and user flow to provide a seamless experience. We then determined a cohesive thematic style that visually represented the website’s intended appearance, incorporating appropriate colours, typography, and design elements. Throughout the process, we collaborated closely to ensure the feasibility of our design concepts. This included providing essential design assets, such as fonts, images and icons, required for the website’s implementation.
 
-As we moved into the implementation phase, we focused on accurately translating the design into HTML and CSS. Usability testing was conducted across various devices to guarantee a consistent and intuitive user experience. We conducted comprehensive usability testing sessions, gathering feedback from real users to guide further improvements. Regular reviews were carried out to verify that the website’s design aligned with the initial wireframes and mockups, ensuring consistency and coherence. All team members contributed to the preparation of the final presentation, highlighting our design decisions and the user-centric features implemented to enhance the overall experience.
-
+As we moved into the implementation phase, we focused on accurately translating the design into HTML and CSS. Usability testing was conducted across various devices to guarantee a consistent and intuitive user experience. We conducted comprehensive usability testing sessions, gathering feedback from real users to guide further improvements. Regular reviews were carried out to verify that the website’s design aligned with the initial wireframes and mockups, ensuring consistency and coherence. 
 
 ### User Stories
 
@@ -132,5 +131,15 @@ Footer with social links and copyright info, any other info?
 
 ### Future Features
 add some inforamtion about future features
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## Agile Methodology
+
+Throughout this project, our team implemented Agile methodology by using a Kanban board to efficiently manage tasks and ensure a smooth workflow. Utilizing GitHub Project Boards, we set up various user issues, assigning them to team members based on their expertise and availability. This allowed us to visually track the progress of each task, identify bottlenecks, and prioritize work effectively. 
+
+By continuously updating the board and holding regular stand-ups, we maintained clear communication and quickly adapted to any changes, ensuring that we delivered high-quality results in a timely manner. Additionally, the use of GitHub Issues enabled us to document each task with detailed descriptions, acceptance criteria, and labels for easy categorization. This structured approach facilitated clear accountability and enhanced collaboration within the team, helping us achieve our project goals efficiently. 
+
+Before deployment, we verified that all the "must-have" and "should-have" tasks on the Kanban board were completed and the web app was ready for launch. The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. All team members contributed to the preparation of the final presentation, ensuring comprehensive coverage of all project aspects. 
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
