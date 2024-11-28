@@ -1,46 +1,47 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  /*shrinks content to fit within the box */
   }
   
   body {
-    height: 100vh;
+    height: 100vh; /* do we want this the full height of the viewport? if not change % to show other buttons */
     display: flex;
-    background: #060AB2;
+    background: #060AB2;  /* change this to a different color with fade/swirl effects for interest */
   }
   
   .hazard-game {
     width: 640px;
     height: 640px;
-    margin: auto;
+    margin: auto; /* centers the game board */
     display: flex;
     flex-wrap: wrap;
-    perspective: 1000px;
+    perspective: 1000px; /* perspective for 3D effect */
+    /* border: 2px solid #2ed14d;  */ /* to enable game board to be viewed during development - can be removed later */
   }
   
   .hazard-card {
     width: calc(25% - 10px);
     height: calc(25% - 10px);
     margin: 5px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
+    position: relative; /* allows for absolute positioning of front and back faces */
+    transform: scale(1); /* default size of the card - starting size for scaling*/
+    transform-style: preserve-3d; /* allows for 3D rotation */
+    transition: transform .5s; /* smooths out the transition */
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   }
   
-  .hazard-card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
+  /* click effect to the hazard card */
+  .hazard-card:active { /* when the card is clicked */
+    transform: scale(0.97); /* when the card is clicked */
+    transition: transform .2s; /* smooths out the transition */
   }
-  
-  .hazard-card.flip {
+   
+  .hazard-card.flip { /* flips the card */
     transform: rotateY(180deg);
   }
   
-
-  .back-face{
+  .back-face{ 
     background-color:#7fffd4;
   }
 
@@ -53,12 +54,13 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    position: absolute;
+    position: absolute; /* allows for absolute positioning of front and back faces */
     border-radius: 5px;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* hides the back face of the card */
+    /* border: 2px solid #e63119; /* not required unless choose to keep border */
   }
   
   .front-face {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* flips the front face */
   }
   
