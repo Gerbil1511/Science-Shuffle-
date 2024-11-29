@@ -1,174 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-
-  <title>Science Shuffle</title>
-
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <title>Science Shuffle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <section class="hazard-game">
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/corrosive-a.png" alt="hazard symbol for corrosive"/>
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/corrosive-b.png" alt="label of corrosive" />
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
-    </div>
+   
+    <section>
+        <div class="container mb-5" style="background-color: #f0f0f0;">
+            <div class="row">
+                <div class="text-center col-md-12 center-content">
+                    <h1 class="m-0">Science Shuffle</h1>
+                     <div class="button-container">
+                        <button class="btn btn-custom mt-2" id="instructions-button">Instructions</button>
+                        <select class="btn btn-custom mt-2" id="difficulty-button">
+                            <option disable selected>Difficulty level</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option></select>
+                        <button class="btn btn-custom mt-2" id="new_game-button">New Game</button>
+                     </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-- HAZARD-GAME-EASY-a+b-->
+         <div class="hazard-game">
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/corrosive-a.png" alt="hazard symbol for corrosive" />
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/corrosive-b.png" alt="label of corrosive" />
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
+            </div>
 
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/environment-a.png" alt="hazard symbol for environmental hazard" />
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/environment-b.png" alt="label of environmental hazard" />
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/environment-a.png"
+                    alt="hazard symbol for environmental hazard" />
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/environment-b.png"
+                    alt="label of environmental hazard" />
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark" />
+            </div>
 
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/explosive-a.png" alt="hazard symbol for explosive">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/explosive-b.png" alt="label of explosive">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/explosive-a.png" alt="hazard symbol for explosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/explosive-b.png" alt="label of explosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/flammable-a.png" alt="hazard symbol for flammable">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/flammable-b.png" alt="label of flammable">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/flammable-a.png" alt="hazard symbol for flammable">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/flammable-b.png" alt="label of flammable">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/health_hazard-a.png" alt="hazard symbol for health-hazard">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/health_hazard-b.png" alt="label of health-hazard">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/health_hazard-a.png"
+                    alt="hazard symbol for health-hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/health_hazard-b.png" alt="label of health-hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/irritant-a.png" alt="hazard symbol for irritant">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/irritant-b.png" alt="label of irritant">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/irritant-a.png" alt="hazard symbol for irritant">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/irritant-b.png" alt="label of irritant">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card">
-               <img class="front-face" src="assets/images/hazards/oxidising-a.png" alt="hazard symbol for oxidising">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/oxidising-b.png" alt="label of oxidising">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-  
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/toxic-a.png" alt="hazard symbol for toxic">
-      <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/oxidising-a.png" alt="hazard symbol for oxidising">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/oxidising-b.png" alt="label of oxidising">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    </div>
-    <div class="hazard-card">
-      <img class="front-face" src="assets/images/hazards/toxic-b.png" alt="label of toxic">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/toxic-a.png" alt="hazard symbol for toxic">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
 
-    </div>
-  </section>
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/toxic-b.png" alt="label of toxic">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+            </div>
+            </div>
+    </section>
 
-<!-- 
+
+<!--HAZARD-GAME-MEDIUM
 HAZARD-GAME-MEDIUM-a+c
-<section class="hazard-game-medium">
-    <div class="hazard-card" data-hazard="corrosive">
-        <img class="front-face" src="assets/images/hazards/corrosive-a.png" alt="hazard symbol for corrosive">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="corrosive">
-        <img class="front-face" src="assets/images/hazards/corrosive-c.png" alt="description for corrosive">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+    <section>
+        <div class="hazard-game-medium">
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/corrosive-a.png" alt="hazard symbol for corrosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/corrosive-c.png" alt="description for corrosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="environment">
-        <img class="front-face" src="assets/images/hazards/environment-a.png"
-            alt="hazard symbol for environmental hazard">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="environment">
-        <img class="front-face" src="assets/images/hazards/environment-c.png"
-            alt="description for environmental hazard">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/environment-a.png"
+                    alt="hazard symbol for environmental hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/environment-c.png"
+                    alt="description for environmental hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="explosive">
-        <img class="front-face" src="assets/images/hazards/explosive-a.png" alt="hazard symbol for explosive">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="explosive">
-        <img class="front-face" src="assets/images/hazards/explosive-c.png" alt="description for explosive">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/explosive-a.png" alt="hazard symbol for explosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/explosive-c.png" alt="description for explosive">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="flammable">
-        <img class="front-face" src="assets/images/hazards/flammable-a.png" alt="hazard symbol for flammable">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="flammable">
-        <img class="front-face" src="assets/images/hazards/flammable-c.png" alt="description for flammable">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/flammable-a.png" alt="hazard symbol for flammable">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/flammable-c.png" alt="description for flammable">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="health_hazard">
-        <img class="front-face" src="assets/images/hazards/health_hazard-a.png" alt="hazard symbol for health-hazard">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="health_hazard">
-        <img class="front-face" src="assets/images/hazards/health_hazard-c.png" alt="description for health-hazard">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/health_hazard-a.png"
+                    alt="hazard symbol for health-hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/health_hazard-c.png"
+                    alt="description for health-hazard">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="irritant">
-        <img class="front-face" src="assets/images/hazards/irritant-a.png" alt="hazard symbol for irritant">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="irritant">
-        <img class="front-face" src="assets/images/hazards/irritant-c.png" alt="description for irritant">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/irritant-a.png" alt="hazard symbol for irritant">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/irritant-c.png" alt="description for irritant">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="oxidising">
-        <img class="front-face" src="assets/images/hazards/oxidising-a.png" alt="hazard symbol for oxidising">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="oxidising">
-        <img class="front-face" src="assets/images/hazards/oxidising-c.png" alt="description for oxidising">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/oxidising-a.png" alt="hazard symbol for oxidising">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/oxidising-c.png" alt="description for oxidising">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
 
-    <div class="hazard-card" data-hazard="toxic">
-        <img class="front-face" src="assets/images/hazards/toxic-a.png" alt="hazard symbol for toxic">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-    <div class="hazard-card" data-hazard="toxic">
-        <img class="front-face" src="assets/images/hazards/toxic-c.png" alt="description for toxic">
-        <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
-    </div>
-</section> -->
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/toxic-a.png" alt="hazard symbol for toxic">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+            <div class="hazard-card">
+                <img class="front-face" src="assets/images/hazards/toxic-c.png" alt="description for toxic">
+                <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
+            </div>
+        </div>
+    </section>-->
 
-<!--HAZARD-GAME-HARD-b+c
-<section class="hazard-game-hard">
+
+    <!--HAZARD GAME HARD-->
+   <!-- HAZARD-GAME-Hard-b+c -->
+<!--<section class="hazard-game-hard">
     <div class="hazard-card" data-hazard="corrosive">
         <img class="front-face" src="assets/images/hazards/corrosive-b.png" alt="label of corrosive">
         <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
@@ -216,7 +243,7 @@ HAZARD-GAME-MEDIUM-a+c
     </div>
 
     <div class="hazard-card" data-hazard="irritant">
-        <img class="front-face" src="assets/images/hazards/irritantb.png" alt="label of irritant">
+        <img class="front-face" src="assets/images/hazards/irritant-b.png" alt="label of irritant">
         <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
     </div>
     <div class="hazard-card" data-hazard="irritant">
@@ -241,5 +268,31 @@ HAZARD-GAME-MEDIUM-a+c
         <img class="front-face" src="assets/images/hazards/toxic-c.png" alt="description for toxic">
         <img class="back-face" src="assets/images/question-mark-green.png" alt="green question mark">
     </div>
-</section>-->
+</section>
+-->
 
+    
+   
+<!-- Modal for difficulty level button-->
+<div class="modal fade" id="difficultyModal" tabindex="-1" aria-labelledby="difficultyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="difficultyModalLabel">Notice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Please select a difficulty level.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
