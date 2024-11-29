@@ -3,7 +3,14 @@
   margin: 0;
   box-sizing: border-box;  /*shrinks content to fit within the box */
 }
-/* heading styles */
+body {
+  height: 100vh; /* do we want this the full height of the viewport? if not change % to show other buttons */
+  display: flex;
+  background: #060AB2;  /* change this to a different color with fade/swirl effects for interest */
+  flex-direction: column;
+  align-items: center;
+}
+/*heading styles */
 .center-content {
   display: flex;
   flex-direction: column;
@@ -12,110 +19,78 @@
   text-align: center;
   margin-bottom: 0; /* Remove bottom margin */
 }
-
-body {
-  height: 100vh;  /* do we want this the full height of the viewport? if not change % to show other buttons */
-  display: flex;
-  justify-content: center;  /* centers horizontally */
-  background: #060AB2;  /* change this to a different color with fade/swirl effects for interest */
-  /*padding-top: 120px;  /* Add padding to the top of the body to prevent content from being hidden behind the fixed header */
-  flex-direction: column;  /* allows for vertical stacking of elements */
-}
-/*
-.header {
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;
+  max-width: 100%;
   width: 100%;
-  background-color: #f8f9fa;  /* Optional: Add a background color 
-  
-  padding: 20px 0;  /* Optional: Add padding 
-  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Optional: Add a shadow 
-  
-  position: fixed;  /* Fix the header at the top 
-  
-  top: 0;
-  left: 0;
-  z-index: 1000;  /* Ensure the header is above other elements 
-  
-} 
-
-.header .container {
-  max-width: 100%;  /* Ensure the container spans the full width 
-  
-  padding: 0 20px;  /* Optional: Add horizontal padding 
-  */
-
-  .button-container {
-    display: flex;
-    justify-content: center; /* centers the buttons horizontally */
-    gap: 10px; /* adds space between the buttons */
-    margin-bottom: 10px; /* Adjust this value to reduce space below buttons */
 }
-
+.button-container {
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 10px; /* adds space between the buttons */
+  margin-bottom: 10px; /* Adjust this value to reduce space below buttons */
+}
 .btn-custom {
-    background-color: white;
-    border: 2px solid #ff8400;
-    color: black;
-    margin: 0 5px;
+  background-color: white;
+  border: 2px solid #FF8400;
+  color: black;
+  margin: 0 5px;
 }
-
 .btn-custom:hover {
-    background-color: #ff8400;
-    color: white;
+  background-color: #FF8400;
+  color: white;
 }
-
-/* default size for desktop screens */
 .hazard-game {
-  width: 640px;
-  height: 640px;
-  margin: 0 auto;  /* centers the game board */
+  width: 850px;
+  height: 850px;
+  margin: auto; /* centers the game board */
   display: flex;
   flex-wrap: wrap;
-  perspective: 1000px;  /* perspective for 3D effect */
-  /* border: 2px solid #2ed14d;  */  /* to enable game board to be viewed during development - can be removed later */
+  max-width: 100%;
+  perspective: 1000px; /* perspective for 3D effect */
+  /* border: 2px solid #2ED14D;  */ /* to enable game board to be viewed during development - can be removed later */
 }
-
 .hazard-card {
   width: calc(25% - 10px);
   height: calc(25% - 10px);
   margin: 5px;
-  position: relative;  /* allows for absolute positioning of front and back faces */
-  transform: scale(1);  /* default size of the card - starting size for scaling*/
-  transform-style: preserve-3d;  /* allows for 3D rotation */
-  transition: transform .5s;  /* smooths out the transition */
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  position: relative; /* allows for absolute positioning of front and back faces */
+  transform: scale(1); /* default size of the card - starting size for scaling*/
+  transform-style: preserve-3d; /* allows for 3D rotation */
+  transition: transform .5s; /* smooths out the transition */
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-
 /* click effect to the hazard card */
-.hazard-card:active {  /* when the card is clicked */
-  transform: scale(0.97);  /* when the card is clicked */
-    transition: transform .2s;  /* smooths out the transition */
+.hazard-card:active { /* when the card is clicked */
+  transform: scale(0.97); /* when the card is clicked */
+  transition: transform .2s; /* smooths out the transition */
 }
-
-.hazard-card.flip {
-  /* flips the card */
+.hazard-card.flip { /* flips the card */
   transform: rotateY(180deg);
 }
-
-.back-face {
-  background-color: #7fffd4;
+.back-face{
+  background-color:#7fffd4;
 }
-
-  .front-face {
-    background: white;
-    padding: 4px;
+.front-face {
+  background: white;
+  padding: 4px;
 ;  }
-
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    position: absolute; /* allows for absolute positioning of front and back faces */
-    border-radius: 5px;
-    backface-visibility: hidden; /* hides the back face of the card */
-    /* border: 2px solid #e63119; /* not required unless choose to keep border */
-  }
-  
-  .front-face {
-    transform: rotateY(180deg); /* flips the front face */
-  }
-  
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* allows for absolute positioning of front and back faces */
+  border-radius: 5px;
+  backface-visibility: hidden; /* hides the back face of the card */
+  /* border: 2px solid #E63119; /* not required unless choose to keep border */
+}
+.front-face {
+  transform: rotateY(180deg); /* flips the front face */
+}
+.counters{
+width: 100%;
+padding: 20px 0;
+text-align: center;
+}
