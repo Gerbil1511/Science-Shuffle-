@@ -66,6 +66,14 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+// Immediately invoked function to shuffle the cards
+(function shuffle() {
+  cards.forEach(card => {
+    let ramdomPos = Math.floor(Math.random() * 12);
+    card.style.order = ramdomPos;
+  });
+})();
+
 // This adds an event listener to each card, and calls the flipCard function when clicked
 cards.forEach(card => card.addEventListener('click', flipCard));
 
