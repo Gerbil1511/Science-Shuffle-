@@ -118,11 +118,19 @@ function startTimer() {
 }
 
 
-// Immediately invoked function to shuffle the cards
-(function shuffle() {
+// Shuffle function
+function shuffle() {
   cards.forEach(card => {
-    let ramdomPos = Math.floor(Math.random() * 12);
-    card.style.order = ramdomPos;
+    let randomPos = Math.floor(Math.random() * cards.length);
+    card.style.order = randomPos;
+  });
+}
+
+// Immediately invoked function to shuffle the cards on page load
+(function shuffleOnLoad() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * cards.length);
+    card.style.order = randomPos;
   });
 })();
 
