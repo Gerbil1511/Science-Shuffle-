@@ -125,4 +125,28 @@ body {
     width: calc(25% - 10px); /* Two cards per row */
     height: calc(25% - 10px); /* Adjust height accordingly */
   }
+.counters {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 10px; /* adds space between the buttons */
+  margin: 20px 0;
+}
+
+.counter-button {
+  background-color: white;
+  border: 2px solid #FF8400;
+  color: black;
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: #FF8400;
+  color: white;
 }
