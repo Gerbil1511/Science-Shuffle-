@@ -68,6 +68,7 @@ function matchCounter(){
   document.getElementById('correct-matches').textContent = matchCount;
   if (matchCount === 8){
     alert("Congratulations! You have matched all the cards!");
+    clearInterval(timerInterval);
   }
 }
 
