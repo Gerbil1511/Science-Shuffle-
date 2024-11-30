@@ -34,7 +34,11 @@ body {
   font-family: 'Bangers', sans-serif;
 }
 
-
+.container {
+  background-color: rgba(0, 139,139,0.8);
+  border-radius: 5px;
+  border: 5px black solid;
+}
 
 /*heading styles */
 .center-content {
@@ -121,6 +125,9 @@ body {
   justify-content: center; /* centers the buttons horizontally */
   gap: 10px; /* adds space between the buttons */
   margin: 20px 0;
+  background-color: rgba(0, 139,139,0.9);
+  border-radius: 5px;
+  border: 5px black solid;
 }
 
 .counter-button {
