@@ -7,8 +7,8 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matchCount = 0;
 let moveCount = 0;
-let seconds = 0;
 let gameStarted = false;
+let timerInterval;
 
 function flipCard() {
 
@@ -91,28 +91,31 @@ function resetBoard() {
 }
 
 function startTimer() {
+  // Clear any existing interval first
+  if (timerInterval) {
+    clearInterval(timerInterval);
+  }
+
   let seconds = 0;
   let minutes = 0;
   const timerElement = document.getElementById("timer");
   
   function updateTimer() {
-      seconds++;
-      
-      if (seconds === 60) {
-          seconds = 0;
-          minutes++;
-      }
-      
-      // Format time to always show two digits
-      const formattedSeconds = seconds.toString().padStart(2, '0');
-      const formattedMinutes = minutes.toString().padStart(2, '0');
-      
-      timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
+    seconds++;
+    
+    if (seconds === 60) {
+      seconds = 0;
+      minutes++;
+    }
+    
+    const formattedSeconds = seconds.toString().padStart(2, '0');
+    const formattedMinutes = minutes.toString().padStart(2, '0');
+    
+    timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
   }
   
-  setInterval(updateTimer, 1000);
-};
-
+  timerInterval = setInterval(updateTimer, 1000);
+}
 
 
 // Immediately invoked function to shuffle the cards
@@ -123,8 +126,42 @@ function startTimer() {
   });
 })();
 
+function resetGame() {
+  // Stop the timer
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;  // Reset the interval variable
+  }
+  
+  // Reset all game variables
+  hasFlippedCard = false;
+  lockBoard = false;
+  firstCard = null;
+  secondCard = null;
+  matchCount = 0;
+  moveCount = 0;
+  gameStarted = false;
+
+  // Reset UI elements
+  document.getElementById('correct-matches').textContent = '0';
+  document.getElementById('number-of-moves').textContent = '0';
+  document.getElementById('timer').textContent = '00:00';
+
+  // Flip all cards back
+  cards.forEach(card => {
+    card.classList.remove('flip');
+    card.addEventListener('click', flipCard);
+  });
+
+  // Shuffle the cards
+  shuffle();
+}
+
+
 // This adds an event listener to each card, and calls the flipCard function when clicked
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+document.getElementById('new-game').addEventListener('click', resetGame);
 
 
 
