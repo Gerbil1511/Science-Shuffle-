@@ -87,21 +87,45 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-(function startTimer(){
+(function startTimer() {
+  let seconds = 0;
+  let minutes = 0;
   const timerElement = document.getElementById("timer");
-    
+  
   function updateTimer() {
       seconds++;
-      if (seconds === 1) {
-        document.getElementById('seconds').textContent = "second";
-      } else if (seconds === 2){
-        document.getElementById('seconds').textContent = "seconds";
+      
+      if (seconds === 60) {
+          seconds = 0;
+          minutes++;
       }
-      timerElement.textContent = seconds;
+      
+      // Format time to always show two digits
+      const formattedSeconds = seconds.toString().padStart(2, '0');
+      const formattedMinutes = minutes.toString().padStart(2, '0');
+      
+      timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
   }
   
   setInterval(updateTimer, 1000);
 })();
+
+
+// (function startTimer(){
+//   const timerElement = document.getElementById("timer");
+    
+//   function updateTimer() {
+//       seconds++;
+//       if (seconds === 1) {
+//         document.getElementById('seconds').textContent = "second";
+//       } else if (seconds === 2){
+//         document.getElementById('seconds').textContent = "seconds";
+//       }
+//       timerElement.textContent = seconds;
+//   }
+  
+//   setInterval(updateTimer, 1000);
+// })();
 
 
 // Immediately invoked function to shuffle the cards
