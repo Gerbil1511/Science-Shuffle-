@@ -9,12 +9,12 @@
 
 ## Introduction
 
-Science Shuffle is a card pairing game revision tool for students stuyding Science at the Key Stage 3 - ???. This project was developed as part of the High Performance Code Institute Full-Stack Software Development For The AI Augmented Developer Bootcamp and was developed in Hackathon 1: Front-end with HTML, CSS & Javascript.
+Science Shuffle is a card pairing game revision tool for students stuyding Science at the Key Stage 3. This project was developed as part of the High Performance Code Institute Full-Stack Software Development For The AI Augmented Developer Bootcamp and was developed in Hackathon 1: Front-end with HTML, CSS & Javascript.
 
 ## Authors
 
 - [Geraldine](https://www.github.com/Gerbil1511)
-- [Joanna](https://www.github.com/)
+- [Joanna](https://www.github.com/JOCPhys)
 - [Maebh](https://www.github.com/)
 
 
@@ -62,8 +62,20 @@ Science Shuffle is a card pairing game revision tool for students stuyding Scien
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
 
 ## PROJECT OUTLINE
+Welcome to the 'Hazards-Match Card-Game' from the Science Shuffle Team! 
 
-Some text here to outline the project proposal, idease, target audeince, user needs, main features
+This engaging card-match activity is inspired by a physical game created for Year 7 pupils learning laboratory safety by one of our team in their previous career. It was used as a recap at the end of a lesson on safe chemical handling, and it later became a regular classroom ‘starter’ activity to reinforce safety principles throughout Key Stage 3 (ages 11-14) as new chemicals and materials that display GHS hazard symbols were introduced to their learning.
+
+The learning objective of the ‘Working Scientifically’ unit is for pupils to describe processes and key characteristics in common language, while also using technical terminology accurately. The game is designed to enable understanding of the hazards and risks associated with substances carrying these labels, to extend specialist vocabulary and ensure precise use of health and safety terminology. Knowledge of GHS hazard symbols extends beyond the classroom to wider society in the use of common household chemicals (such as detergents) and to those working with hazardous substances (such as Pharmaceuticals, Waste Management, Manufacturing, Hygienists, Emergency Responders and those training in Health & Safety certification (eg NEBOSSH/COSSH/DSEAR and REACH)), making it essential for everyone to recognize and understand these symbols. As such, this game is suitable for all ages, from Key Stage 3 pupils to adults.
+
+In 2015, the GHS was updated to replace the various hazardous material classification systems previously used worldwide, including the old orange CHIP (Control of Hazardous Materials) symbols used in the UK, which many previous learning resources were derived from and continue to use. The Science Shuffle 'Hazards-Match' game uses the updated GHS symbols and meanings, ensuring it is relevant to today’s standards. The game offers multiple difficulty levels: Easy - matching hazard symbols with label names, Medium - matching hazard symbols with descriptions of risk, and Hard - matching label names with descriptions of risk without symbols. This ensures a challenging and educational experience for players of all ages.
+
+As the primary target audience is Key Stage 3 Science students working within a classroom laboratory environment,  the primary design is therefore Tablet-first (using 1112px by 834px screen dimensions), as tablets are the go-to device used in school laboratories. Mobile is considered as secondary (for other learners) and desktop last. The readability of the both the Label Cards and Description cards are optimally viewed in Tablet or Laptop screen sizes*. 
+
+The features such as the 'Timer' and 'Number of Moves' counters and the 'Restart' button etc all remain in the body of the window without the need for scrolling in any device screen sizes. This is to ensure that the user can see all relevant features in one viewport for the focus to remain on the content of the game rather than introduce distractions. 
+
+The game is designed as a revision tool to consolidate learning after study of the Hazards have taken place, however, a modal is provided with an overview of the required information for those who are new to the concept so that it can be used as a study tool in the first instance if necessary. 
+
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
 
@@ -75,6 +87,9 @@ To ensure our project was user-centric, we began by conducting thorough user res
 
 As we moved into the implementation phase, we focused on accurately translating the design into HTML and CSS. Usability testing was conducted across various devices to guarantee a consistent and intuitive user experience. We conducted comprehensive usability testing sessions, gathering feedback from real users to guide further improvements. Regular reviews were carried out to verify that the web app’s design aligned with the initial wireframes and mockups, ensuring consistency and coherence. 
 
+*The readability of the both the Label cards and Description cards are optimally viewed in Tablet or Laptop screen sizes. 
+The text on both the Label cards and the Description cards is quite small (but readable)when viewed on mobile devices. However, it was decided to keep with the images of the text which would all adapt in size uniformly in different viewports rather than adaptive text within the cards themselves as the text length of each card varies and therefore adaptive text would cause text of various sizes within the one game, which can contribute to 'visual clutter' for users and increase congnitive load, therefore making learning less effective.
+ 
 ### User Stories
 
 ### Fonts
@@ -87,15 +102,15 @@ As we moved into the implementation phase, we focused on accurately translating 
 
 - Mobile
 
-![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+![Wireframe](readmedocs/Hazards-Match-Mobile-Wireframe.png)
 
 - Tablet
 
-![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+![Wireframe](readmedocs/Hazards-Match-Tablet-Wireframe.png)
 
 - Desktop
 
-![Wireframe](https://via.placeholder.com/468x300?text=Wireframe+Here)
+![Wireframe](readmedocs/Hazards-Match-Desktop-Wireframe.png)
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
 
