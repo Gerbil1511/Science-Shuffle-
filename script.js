@@ -161,8 +161,10 @@ function resetGame() {
     card.addEventListener('click', flipCard);
   });
 
-  // Shuffle the cards
-  shuffle();
+  // Delay the shuffle to ensure cards have unflipped
+  setTimeout(() => {
+    shuffle();
+  }, 500); // Adjust the delay time as needed
 }
 
 
