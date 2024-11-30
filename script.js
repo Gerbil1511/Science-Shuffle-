@@ -7,6 +7,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matchCount = 0;
 let moveCount = 0;
+let seconds = 0;
 
 function flipCard() {
   // if lockBoard is true, nothing else can be executed
@@ -19,6 +20,10 @@ function flipCard() {
 
 // console.log("3")
   this.classList.add('flip');
+
+  if (moveCount === 0){
+    startTimer();
+  }
 
 // console.log("4")
     if (!hasFlippedCard) {
@@ -81,6 +86,23 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
+(function startTimer(){
+  const timerElement = document.getElementById("timer");
+    
+  function updateTimer() {
+      seconds++;
+      if (seconds === 1) {
+        document.getElementById('seconds').textContent = "second";
+      } else if (seconds === 2){
+        document.getElementById('seconds').textContent = "seconds";
+      }
+      timerElement.textContent = seconds;
+  }
+  
+  setInterval(updateTimer, 1000);
+})();
+
 
 // Immediately invoked function to shuffle the cards
 (function shuffle() {
