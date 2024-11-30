@@ -7,8 +7,11 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matchCount = 0;
 let moveCount = 0;
+let gameStarted = false;
+let timerInterval;
 
 function flipCard() {
+
   // if lockBoard is true, nothing else can be executed
 // console.log("1")
   if (lockBoard) return;
@@ -19,6 +22,11 @@ function flipCard() {
 
 // console.log("3")
   this.classList.add('flip');
+
+  if (!gameStarted) {
+    gameStarted = true;
+    startTimer();
+  }
 
 // console.log("4")
     if (!hasFlippedCard) {
@@ -82,16 +90,88 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-// Immediately invoked function to shuffle the cards
-(function shuffle() {
+function startTimer() {
+  // Clear any existing interval first
+  if (timerInterval) {
+    clearInterval(timerInterval);
+  }
+
+  let seconds = 0;
+  let minutes = 0;
+  const timerElement = document.getElementById("timer");
+  
+  function updateTimer() {
+    seconds++;
+    
+    if (seconds === 60) {
+      seconds = 0;
+      minutes++;
+    }
+    
+    const formattedSeconds = seconds.toString().padStart(2, '0');
+    const formattedMinutes = minutes.toString().padStart(2, '0');
+    
+    timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
+  }
+  
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+
+// Shuffle function
+function shuffle() {
   cards.forEach(card => {
-    let ramdomPos = Math.floor(Math.random() * 12);
-    card.style.order = ramdomPos;
+    let randomPos = Math.floor(Math.random() * cards.length);
+    card.style.order = randomPos;
+  });
+}
+
+// Immediately invoked function to shuffle the cards on page load
+(function shuffleOnLoad() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * cards.length);
+    card.style.order = randomPos;
   });
 })();
 
+function resetGame() {
+  // Stop the timer
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;  // Reset the interval variable
+  }
+  
+  // Reset all game variables
+  hasFlippedCard = false;
+  lockBoard = false;
+  firstCard = null;
+  secondCard = null;
+  matchCount = 0;
+  moveCount = 0;
+  gameStarted = false;
+
+  // Reset UI elements
+  document.getElementById('correct-matches').textContent = '0';
+  document.getElementById('number-of-moves').textContent = '0';
+  document.getElementById('timer').textContent = '00:00';
+
+  // Flip all cards back
+  cards.forEach(card => {
+    card.classList.remove('flip');
+    card.addEventListener('click', flipCard);
+  });
+
+  // Delay the shuffle to ensure cards have unflipped
+  setTimeout(() => {
+    shuffle();
+  }, 500); // Adjust the delay time as needed
+}
+
+
 // This adds an event listener to each card, and calls the flipCard function when clicked
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+document.getElementById('new-game').addEventListener('click', resetGame);
 
 
 
