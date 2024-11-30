@@ -2,6 +2,7 @@
 
 const cards = document.querySelectorAll('.hazard-card');
 
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -172,7 +173,7 @@ function resetGame() {
 // This adds an event listener to each card, and calls the flipCard function when clicked
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-document.getElementById('new-game').addEventListener('click', resetGame);
+document.getElementById('new-game-button').addEventListener('click', resetGame);
 
 
 
