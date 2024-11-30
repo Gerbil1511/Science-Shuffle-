@@ -9,13 +9,13 @@
 
 ## Introduction
 
-Science Shuffle is a card pairing game revision tool for students stuyding Science at the Key Stage 3. This project was developed as part of the High Performance Code Institute Full-Stack Software Development For The AI Augmented Developer Bootcamp and was developed in Hackathon 1: Front-end with HTML, CSS & Javascript.
+Science Shuffle is a card pairing game revision tool for students stuyding Science at Key Stage 3 (ages 11-14 years). This project was developed as part of the High Performance Code Institute Full-Stack Software Development For The AI Augmented Developer Bootcamp and was developed in Hackathon 1: Front-end with HTML, CSS & Javascript.
 
 ## Authors
 
-- [Geraldine](https://www.github.com/Gerbil1511)
-- [Joanna](https://www.github.com/JOCPhys)
-- [Maebh](https://www.github.com/)
+- [Geraldine Edwards](https://www.github.com/Gerbil1511)
+- [Joanna O'Connor](https://www.github.com/JOCPhys)
+- [Maebh NiGhuairim](https://www.github.com/)
 
 
 
@@ -188,11 +188,35 @@ On reflection, the integration of AI into our project development process has es
 
 ## Deployment
 
-To deploy this project run
 
-```bash
-  npm run deploy
-```
+To deploy this project, follow these steps:
+
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/your-username/science-shuffle.git
+   cd science-shuffle
+   ```
+
+2. **Install Dependencies:**
+   Make sure you have Node.js and npm installed. Then, run:
+   ```sh
+   npm install
+   ```
+
+3. **Build the Project:**
+   ```sh
+   npm run build
+   ```
+
+4. **Deploy to GitHub Pages:**
+   ```sh
+   npm run deploy
+   ```
+
+5. **Access the Live Site:**
+   After deployment, you can access your project at `https://your-username.github.io/science-shuffle/`.
+
+<br>
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
 
 ## Testing

@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-  background-color: rgba(0, 139,139,0.8);
+  background-color: rgba(0, 139,139,0.85);
   border-radius: 5px;
   border: 5px black solid;
 }
@@ -89,6 +89,7 @@ body {
   transform-style: preserve-3d;
   transition: transform .5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  cursor: grab; 
 }
 /* click effect to the hazard card */
 .hazard-card:active { /* when the card is clicked */
@@ -139,6 +140,7 @@ body {
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  
 }
 
 .counter-button:hover {
