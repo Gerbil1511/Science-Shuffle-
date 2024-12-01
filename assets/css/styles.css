@@ -154,12 +154,6 @@ body {
   color: white;
 }
 
-
-@media screen and (max-width: 768px) {
-  .hazard-card {
-    width: calc(25% - 10px); /* Two cards per row */
-    height: calc(25% - 10px); /* Adjust height accordingly */
-  }
 .counters {
   width: 100%;
   padding: 20px 0;
@@ -185,5 +179,16 @@ body {
   background-color: #FF8400;
   color: white;
 }
+
+/* overwrites the modal backdrop opacity */
+.modal-backdrop
+{
+    opacity:0 !important;
 }
 
+@media screen and (max-width: 768px) {
+  .hazard-card {
+    width: calc(25% - 10px); /* Two cards per row */
+    height: calc(25% - 10px); /* Adjust height accordingly */
+  }
+}
