@@ -10,19 +10,42 @@
 
 <body>
 
+
+
+<!-- Button to trigger modal -->
+<!-- <button type="button" class="btn btn-custom mt-2" id="instruction-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Study First!</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="instructionsModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="instructionsModal">Study this image first in order to know which pairs to match.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/fullhazardlist.png" alt="Fill Hazard List" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <section>
         <div class="container mb-5">
             <div class="row">
                 <div class="text-center col-md-12 center-content">
                     <h1 class="m-0">Science Shuffle:<br> Hazards-Match Game!</h1>
                      <div class="button-container">
-                        <button class="btn btn-custom mt-2" id="new-game-button">New Game</button>
+                        <button type="button" class="btn btn-custom mt-2" id="new-game-button">New Game</button>
                         <select class="btn btn-custom mt-2" id="difficulty-button">
                             <option disabled selected>Difficulty level</option>
                             <option value="easy">Easy</option>
                             <option value="medium">Medium</option>
                             <option value="hard">Hard</option></select>
-                        <button class="btn btn-custom mt-2" id="instruction-button">Study First!</button>
+                            <button type="button" class="btn btn-custom mt-2" id="instruction-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Study First!</button>
                      </div>
                     <h3>Match two corresponding cards in the least number of moves!</h3>
                 </div>
