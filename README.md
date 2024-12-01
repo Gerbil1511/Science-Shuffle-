@@ -266,8 +266,23 @@ During the testing phase of our project, we encountered several bugs that needed
 | When the game was restarted before cards were unflipped, they first shuffled and then unflipped, giving away the new locations of the cards. | I added a time delay to the restart button so that the cards could unflip before being shuffled |
 | Timer doesn't stop when the game is finished | Added the clearInterval function to the matchCounter function so that the timer stops when all the cards are matched |
 | The 'congrats! you've matched all the cards!' pop-up message appears as the last card is clicked but BEFORE it flips front-face up |  |
+<br>
 
 
+### Validation
+
+Validation is a crucial aspect of the software development process, as it ensures that the product meets the specified requirements and functions as intended. To enhance our validation efforts, we leveraged online validation tools extensively. These tools allowed us to automate testing and quickly identify any discrepancies or errors in our code. By utilizing these tools, we were able to perform rigorous testing and verification, ensuring that each component and feature functioned correctly and met our quality standards. Online validation tools provided real-time feedback and detailed reports, enabling us to address issues promptly and refine our code efficiently.
+<br>
+
+#### Lighthouse
+
+#### WAVE
+
+#### W3C - HTML
+
+#### W3C- CSS
+
+<br>
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
 
 ## Credits and Acknowledgements
