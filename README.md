@@ -260,12 +260,13 @@ During the testing phase of our project, we encountered several bugs that needed
 
 | Bug Discovered | Solution/Potential Solution |
 | -------------- | --------------------------- |
-| Potential one - if I flip a card, I should not be able to unflip it, and I currently can, and it puts the card out of play! | Fixed by adding more code like lockbox |
-| Card game visibility in the viewport - responsivity |  |
-| Images not displaying in the grid or flipping in their current position | Resolved by..... (Maebh - can you recall what you did to get the grid correct yesterday? :D so I can add to the README) Our sizing was wrong, I think, and it had the wrong flexbox added |
-| When the game was restarted before cards were unflipped, they first shuffled and then unflipped, giving away the new locations of the cards. | I added a time delay to the restart button so that the cards could unflip before being shuffled |
-| Timer doesn't stop when the game is finished | Added the clearInterval function to the matchCounter function so that the timer stops when all the cards are matched |
-| The 'congrats! you've matched all the cards!' pop-up message appears as the last card is clicked but BEFORE it flips front-face up |  |
+| Bug 1: If user flips a card, they should not be able to unflip it, and they currently can, and it puts the card out of play! | Fixed by adding more code like lockbox |
+| Bug 2: Card game visibility in the viewport - responsivity |  |
+| Bug 3: Images not displaying in the grid or flipping in their current position | Resolved by adjusting sizing and added the correct flexbox properties |
+| Bug 4: When the game was restarted before cards were unflipped, they first shuffled and then unflipped, giving away the new locations of the cards. | Added a time delay to the restart button so that the cards could unflip before being shuffled |
+| Bug 5: Timer doesn't stop when the game is finished | Added the clearInterval function to the matchCounter function so that the timer stops when all the cards are matched |
+| Bug 6: The 'congrats! you've matched all the cards!' alert appears as the last card is clicked but BEFORE it flips front-face up | Added a set timeout function to allow the user to click the final card before the alert appears
+ |
 <br>
 
 
