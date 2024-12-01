@@ -67,9 +67,11 @@ function disableCards() {
 function matchCounter(){
   matchCount++;
   document.getElementById('correct-matches').textContent = matchCount;
-  if (matchCount === 8){
-    alert("Congratulations! You have matched all the cards!");
+  if (matchCount === 8) {
     clearInterval(timerInterval);
+    setTimeout(() => {
+      alert("Congratulations! You have matched all the cards!");
+    }, 600); // 600 milliseconds delay
   }
 }
 
@@ -117,6 +119,29 @@ function startTimer() {
   }
   
   timerInterval = setInterval(updateTimer, 1000);
+
+  // Add the active class to the counter-buttons so that the style changes when the timer starts
+  const buttons = document.querySelectorAll('.counter-button');
+  buttons.forEach(button => {
+    button.classList.add('active-counter-button');
+  });
+
+  // Function to reset the buttons to their original styles
+function resetButtons() {
+  const buttons = document.querySelectorAll('.counter-button');
+  buttons.forEach(button => {
+    button.classList.remove('active-counter-button');
+  });
+}
+
+
+// Event listener for the "New Game" button
+document.getElementById('new-game-button').addEventListener('click', () => {
+  resetButtons();
+  // Additional logic to start a new game
+});
+
+
 }
 
 

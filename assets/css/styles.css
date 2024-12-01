@@ -147,6 +147,11 @@ body {
   background-color: #FF8400;
   color: white;
 }
+.active-counter-button {
+  background-color: #FF8400;
+  color: white;
+}
+
 
 @media screen and (max-width: 768px) {
   .hazard-card {
