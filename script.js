@@ -75,6 +75,7 @@ function matchCounter(){
   }
 }
 
+
 function unflipCards() {
    // locks board until the cards are flipped back
     lockBoard = true;
