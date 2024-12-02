@@ -3,7 +3,7 @@
 ![Live Site](https://via.placeholder.com/468x300?text=Live+Site+Here)
 
 <p>
-| <a href="https://gerbil1511.........../" target="_blank">Live Project</a> |
+| <a href="https://gerbil1511.github.io/Science-Shuffle/" target="_blank">Live Project</a> |
 </p>
 
 
@@ -358,9 +358,11 @@ Validation is a crucial aspect of the software development process, as it ensure
 
 #### W3C - HTML
 W3C Validator identified errors that where then corrected and finally zero errors but 5 ‘Warnings’ remain - these all refer to not having a heading in the section – it was agreed that headings are not required in the sections.
+<img src="readmedocs/W3C-validation-no-errors-5-warnings" alt="validation" width="50%" height="50%">
 
 #### W3C- CSS
 W3C CSS Validator identified no warnings or errors.
+<img src="readmedocs/W3C-CSS-validation-no-errors.png" alt="validation" width="50%" height="50%">
 
 ### JS Hint
 There were a few warnings in JSHint, primarily related to the use of let or arrow function syntax. These modern JavaScript features are sometimes unsupported or behave inconsistently in older browsers, such as certain versions of Mozilla Firefox. While these warnings highlight potential compatibility issues, they do not impact the core functionality of the game, as most modern browsers fully support these syntactical elements. 
