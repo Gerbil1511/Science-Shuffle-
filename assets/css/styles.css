@@ -189,10 +189,36 @@ body {
 }
 
 
-.red-
-
-/* overwrites the modal backdrop opacity */
-.modal-backdrop
-{
-  background-color: transparent;
+.red-border {
+  border: 5px solid red;
 }
+
+.orange-border {
+  border: 5px solid orange;
+}
+
+.yellow-border {
+  border: 5px solid yellow;
+}
+
+.green-border {
+  border: 5px solid green;
+}
+
+.blue-border {
+  border: 5px solid blue;
+}
+
+.dark-blue-border {
+  border: 5px solid darkblue;
+}
+
+.purple-border {
+  border: 5px solid purple;
+}
+
+.pink-border {
+  border: 5px solid pink;
+} 
+
+
