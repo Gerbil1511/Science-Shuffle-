@@ -50,7 +50,7 @@ function checkForMatch() {
   }
 }
 function moveCounter(){
-  moveCount++;
+  ++moveCount;
   document.getElementById('number-of-moves').textContent = moveCount;
 }
 
