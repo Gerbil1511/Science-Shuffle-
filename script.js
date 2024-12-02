@@ -120,16 +120,31 @@ function matchCounter(){
 
 
 function unflipCards() {
-   // locks board until the cards are flipped back
-    lockBoard = true;
-    setTimeout(() => {
-      if (firstCard && secondCard) {
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
-      }
-      resetBoard();
-    }, 1200);
+  // locks board until the cards are flipped back
+  lockBoard = true;
+
+  // Get the selected difficulty level
+  const difficulty = document.getElementById('difficulty-button').value;
+  console.log("Selected difficulty:", difficulty); 
+
+  // Set the timeout duration based on the difficulty level
+  let timeoutDuration;
+  if (difficulty === 'easy') {
+    timeoutDuration = 1000; // Shorter timeout for easy difficulty
+  } else if (difficulty === 'hard') {
+    timeoutDuration = 3000; // Longer timeout for hard difficulty
+  } else {
+    timeoutDuration = 2000; // Default timeout for medium difficulty
   }
+
+  setTimeout(() => {
+    if (firstCard && secondCard) {
+      firstCard.classList.remove('flip');
+      secondCard.classList.remove('flip');
+    }
+    resetBoard();
+  }, timeoutDuration);
+}
 
 // reset the board after each round
 function resetBoard() {
