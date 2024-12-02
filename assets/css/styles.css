@@ -90,7 +90,7 @@ body {
   transform-style: preserve-3d;
   transition: transform .5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  cursor: grab; 
+  cursor: pointer; 
 }
 /* click effect to the hazard card */
 .hazard-card:active { /* when the card is clicked */
