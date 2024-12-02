@@ -68,16 +68,6 @@ body {
   background-color: #FF8400;
   color: white;
 }
-/* .hazard-game {
-  width: 100%;
-  height: auto;
-  max-width: 850px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  perspective: 1000px;
-} */
 
 .hazard-game-easy,
 .hazard-game-medium,
@@ -235,4 +225,9 @@ body {
   border: 5px solid pink;
 } 
 
+
+/* Disable hover effect for touch devices */
+.no-hover .glow-box:hover {
+  box-shadow: none; /* Disable the hover effect */
+}
 

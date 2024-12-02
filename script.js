@@ -291,5 +291,10 @@ document.addEventListener('DOMContentLoaded', () => {
   showSection('easy');
 });
 
-
+// Add a class to the body if the device supports touch
+document.addEventListener('DOMContentLoaded', () => {
+  if ('ontouchstart' in window || navigator.maxTouchPoints) {
+    document.body.classList.add('no-hover');
+  }
+});
 
