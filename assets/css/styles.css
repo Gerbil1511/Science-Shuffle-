@@ -92,6 +92,11 @@ body {
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   cursor: pointer; 
 }
+
+.glow-box:hover {
+  box-shadow: 0 0 15px rgba(250, 0, 0, 1);
+}
+
 /* click effect to the hazard card */
 .hazard-card:active { /* when the card is clicked */
   transform: scale(0.97); /* when the card is clicked */
@@ -185,6 +190,9 @@ body {
   background-color: #FF8400;
   color: white;
 }
+
+
+.red-
 
 /* overwrites the modal backdrop opacity */
 .modal-backdrop

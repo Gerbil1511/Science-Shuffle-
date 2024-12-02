@@ -59,6 +59,10 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  // Remove the 'glow-box' class from the cards
+  firstCard.classList.remove('glow-box');
+  secondCard.classList.remove('glow-box');
+
   matchCounter();
 
   resetBoard();
