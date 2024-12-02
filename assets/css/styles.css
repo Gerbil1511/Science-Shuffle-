@@ -69,6 +69,13 @@ body {
   color: white;
 }
 
+#difficulty-button:focus,
+#difficulty-button:active {
+  background-color: #FF8400; /* Orange background */
+  color: black; /* White text */
+  border-color: white; /* Orange border */
+}
+
 .hazard-game-easy,
 .hazard-game-medium,
 .hazard-game-hard {
