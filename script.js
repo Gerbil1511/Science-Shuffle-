@@ -130,11 +130,11 @@ function unflipCards() {
   // Set the timeout duration based on the difficulty level
   let timeoutDuration;
   if (difficulty === 'easy') {
-    timeoutDuration = 1000; // Shorter timeout for easy difficulty
+    timeoutDuration = 800; // Shorter timeout for easy difficulty
   } else if (difficulty === 'hard') {
-    timeoutDuration = 3000; // Longer timeout for hard difficulty
+    timeoutDuration = 2500; // Longer timeout for hard difficulty
   } else {
-    timeoutDuration = 2000; // Default timeout for medium difficulty
+    timeoutDuration = 1800; // Default timeout for medium difficulty
   }
 
   setTimeout(() => {
