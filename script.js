@@ -184,8 +184,6 @@ document.getElementById('new-game-button').addEventListener('click', () => {
   resetButtons();
   // Additional logic to start a new game
 });
-
-
 }
 
 
@@ -249,6 +247,33 @@ function resetGame() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 document.getElementById('new-game-button').addEventListener('click', resetGame);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const difficultyButton = document.getElementById('difficulty-button');
+  const sections = {
+    easy: document.getElementById('hazard-game-easy'),
+    medium: document.getElementById('hazard-game-medium'),
+    hard: document.getElementById('hazard-game-hard')
+  };
+  console.log(sections);
+  /**
+   * Shows the section based on the selected difficulty.
+   * 
+@Param
+ {string} difficulty - The difficulty level (easy, medium, hard).
+   */
+  function showSection(difficulty) {
+    Object.keys(sections).forEach(key => {
+      sections[key].style.display = key === difficulty ? 'grid' : 'none';
+    });
+  }
+  difficultyButton.addEventListener('change', (event) => {
+    showSection(event.target.value);
+  });
+  // Show the default section
+  showSection('easy');
+});
 
 
 

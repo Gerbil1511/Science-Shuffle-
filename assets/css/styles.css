@@ -68,7 +68,20 @@ body {
   background-color: #FF8400;
   color: white;
 }
-.hazard-game {
+/* .hazard-game {
+  width: 100%;
+  height: auto;
+  max-width: 850px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  perspective: 1000px;
+} */
+
+.hazard-game-easy,
+.hazard-game-medium,
+.hazard-game-hard {
   width: 100%;
   height: auto;
   max-width: 850px;
@@ -78,6 +91,8 @@ body {
   gap: 10px;
   perspective: 1000px;
 }
+
+
 .hazard-card {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -160,7 +175,6 @@ body {
   background-color: #FF8400;
   color: white;
 }
-
 
 .counters {
   width: 100%;
