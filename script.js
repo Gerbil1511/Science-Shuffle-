@@ -208,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     medium: document.getElementById('hazard-game-medium'),
     hard: document.getElementById('hazard-game-hard')
   };
+  console.log(sections);
 
   /**
    * Shows the section based on the selected difficulty.
@@ -215,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   function showSection(difficulty) {
     Object.keys(sections).forEach(key => {
-      sections[key].style.display = key === difficulty ? 'block' : 'none';
+      sections[key].style.display = key === difficulty ? 'grid' : 'none';
     });
   }
 
