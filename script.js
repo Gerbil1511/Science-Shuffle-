@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   difficultyButton.addEventListener('change', (event) => {
     showSection(event.target.value);
+    resetGame();
   });
   // Show the default section
   showSection('easy');
