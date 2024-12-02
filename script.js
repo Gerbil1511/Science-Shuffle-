@@ -43,14 +43,53 @@ function checkForMatch() {
   if (!firstCard || !secondCard) {
     console.error("One or both cards are undefined");
     return;
+  } 
+
+  let isMatch = firstCard.dataset.image === secondCard.dataset.image;
+  if (isMatch) {
+    if (firstCard.dataset.image === "flammable") {
+      console.log("flammable");
+      firstCard.classList.add('red-border');
+      secondCard.classList.add('red-border');
+    } else if (firstCard.dataset.image === "explosive") {
+      console.log("explosive");
+      firstCard.classList.add('orange-border');
+      secondCard.classList.add('orange-border');
+    } else if (firstCard.dataset.image === "toxic") {
+      console.log("toxic");
+      firstCard.classList.add('green-border');
+      secondCard.classList.add('green-border');
+    } else if (firstCard.dataset.image === "corrosive") {
+      console.log("corrosive");
+      firstCard.classList.add('blue-border');
+      secondCard.classList.add('blue-border');
+    } else if (firstCard.dataset.image === "oxidising") {
+      console.log("oxidising");
+      firstCard.classList.add('purple-border');
+      secondCard.classList.add('purple-border');
+    } else if (firstCard.dataset.image === "environmental") {
+      console.log("environmental");
+      firstCard.classList.add('dark-blue-border');
+      secondCard.classList.add('dark-blue-border');
+    } else if (firstCard.dataset.image === "irritant") {
+      console.log("irritant");
+      firstCard.classList.add('pink-border');
+      secondCard.classList.add('pink-border');
+    } else if (firstCard.dataset.image === "health") {
+      console.log("health");
+      firstCard.classList.add('yellow-border');
+      secondCard.classList.add('yellow-border');
+    }
+
+    disableCards();
   } else {
-    let isMatch = firstCard.dataset.image === secondCard.dataset.image;
-    isMatch ? disableCards() : unflipCards();
-    moveCounter()
+    unflipCards();
   }
+
+  moveCounter();
 }
 function moveCounter(){
-  moveCount++;
+  ++moveCount;
   document.getElementById('number-of-moves').textContent = moveCount;
 }
 
@@ -58,6 +97,10 @@ function disableCards() {
 // console.log("8")
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
+
+  // Remove the 'glow-box' class from the cards
+  firstCard.classList.remove('glow-box');
+  secondCard.classList.remove('glow-box');
 
   matchCounter();
 
@@ -70,7 +113,7 @@ function matchCounter(){
   if (matchCount === 8) {
     clearInterval(timerInterval);
     setTimeout(() => {
-      alert("Congratulations! You have matched all the cards!");
+      alert("Congratulations! You have matched all the cards! You completed the game in " + moveCount + " moves and your time was " + document.getElementById('timer').textContent + "!");
     }, 600); // 600 milliseconds delay
   }
 }
