@@ -232,10 +232,16 @@ function resetGame() {
     card.addEventListener('click', flipCard);
   });
 
+  // Flip all cards back and clear all classes
+  cards.forEach(card => {
+    card.className = ''; // Clear all classes
+    card.classList.add('hazard-card', 'rounded-2', 'glow-box');
+  });
+
   // Delay the shuffle to ensure cards have unflipped
   setTimeout(() => {
     shuffle();
-  }, 500); // Adjust the delay time as needed
+  }, 500); // 500 milliseconds delay
 }
 
 
