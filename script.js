@@ -81,10 +81,6 @@ function checkForMatch() {
       secondCard.classList.add('yellow-border');
     }
 
-
-
-
-
     disableCards();
   } else {
     unflipCards();
@@ -117,7 +113,7 @@ function matchCounter(){
   if (matchCount === 8) {
     clearInterval(timerInterval);
     setTimeout(() => {
-      alert("Congratulations! You have matched all the cards!");
+      alert("Congratulations! You have matched all the cards! You completed the game in " + moveCount + " moves and your time was " + document.getElementById('timer').textContent + "!");
     }, 600); // 600 milliseconds delay
   }
 }
