@@ -226,3 +226,8 @@ body {
 } 
 
 
+/* Disable hover effect for touch devices */
+.no-hover .glow-box:hover {
+  box-shadow: none; /* Disable the hover effect */
+}
+
