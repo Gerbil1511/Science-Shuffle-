@@ -16,15 +16,18 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="instructionsModal">Study this image first in order to know which
-                        pairs to match.</h1>
+                    <h1 class="modal-title fs-5" id="instructionsModal">Study this image first to identify the labels for each hazard symbol.</h1>
+                    <p>Think about how each symbol would be described for the more difficult levels!</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/fullhazardlist.png" alt="Fill Hazard List" class="img-fluid">
+                    <img src="assets/images/fullhazardlist.png" alt="Fill Hazard List" class="img-fluid"><br>
                     <p> For further revision material about Hazard symbols visit <a
                             href="https://www.bbc.co.uk/bitesize/guides/zsfpb82/revision/1" target="_blank">BBC
                             Bitesize</a></p>
+                            <p>Keep your eye on the score bar at the bottom to see how many moves you take to complete all 8 matching pairs!</p>
+                            <p>A timer is provided so you can challenge yourself to complete following game sets faster!</p>
+                            <p>Good luck!</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -39,15 +42,15 @@
                 <div class="text-center col-md-12 center-content">
                     <h1 class="m-0">Science Shuffle:<br> Hazards-Match Game!</h1>
                     <div class="button-container">
-                        <button type="button" class="btn btn-custom mt-2" id="new-game-button">New Game</button>
+                        <button type="button" class="btn btn-custom mt-2" id="instruction-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Study First!</button>
                         <select class="btn btn-custom mt-2" id="difficulty-button">
                             <option disabled selected>Difficulty level</option>
                             <option value="easy">Easy</option>
                             <option value="medium">Medium</option>
                             <option value="hard">Hard</option>
                         </select>
-                        <button type="button" class="btn btn-custom mt-2" id="instruction-button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Study First!</button>
+                        <button type="button" class="btn btn-custom mt-2" id="new-game-button">New Game</button>
                     </div>
                     <h3>Match two corresponding cards in the least number of moves!</h3>
                 </div>
