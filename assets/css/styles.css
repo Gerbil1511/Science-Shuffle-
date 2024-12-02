@@ -26,11 +26,8 @@ body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  position: fixed;
-  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   font-family: 'Bangers', sans-serif;
 }
 
@@ -61,9 +58,9 @@ body {
   margin-bottom: 10px; /* Adjust this value to reduce space below buttons */
 }
 .btn-custom {
-  background-color: white;
+  background-color: #FF8400;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  border: 2px solid #FF8400;
+  border: 2px solid white;
   color: black;
   margin: 0 5px;
 }
@@ -90,8 +87,13 @@ body {
   transform-style: preserve-3d;
   transition: transform .5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  cursor: grab; 
+  cursor: pointer; 
 }
+
+.glow-box:hover {
+  box-shadow: 0 0 15px rgba(250, 0, 0, 1);
+}
+
 /* click effect to the hazard card */
 .hazard-card:active { /* when the card is clicked */
   transform: scale(0.97); /* when the card is clicked */
@@ -137,11 +139,16 @@ body {
   border: 2px solid #FF8400;
   color: black;
   margin: 0 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+  /* font-size:; */
   
 }
 
@@ -153,6 +160,7 @@ body {
   background-color: #FF8400;
   color: white;
 }
+
 
 .counters {
   width: 100%;
@@ -180,15 +188,37 @@ body {
   color: white;
 }
 
-/* overwrites the modal backdrop opacity */
-.modal-backdrop
-{
-    opacity:0 !important;
+
+.red-border {
+  border: 5px solid red;
 }
 
-@media screen and (max-width: 768px) {
-  .hazard-card {
-    width: calc(25% - 10px); /* Two cards per row */
-    height: calc(25% - 10px); /* Adjust height accordingly */
-  }
+.orange-border {
+  border: 5px solid orange;
 }
+
+.yellow-border {
+  border: 5px solid yellow;
+}
+
+.green-border {
+  border: 5px solid green;
+}
+
+.blue-border {
+  border: 5px solid blue;
+}
+
+.dark-blue-border {
+  border: 5px solid darkblue;
+}
+
+.purple-border {
+  border: 5px solid purple;
+}
+
+.pink-border {
+  border: 5px solid pink;
+} 
+
+
