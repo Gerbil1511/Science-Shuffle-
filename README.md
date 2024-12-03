@@ -122,33 +122,50 @@ User stories are short, simple descriptions of a feature from the perspective of
 
 Choosing the right font is a critical aspect of UX design, as it greatly impacts readability and overall user experience. In the initial stages of our project, we selected the Google Font "Bangers" for its fun,  bold and eye-catching style. However, upon reflection, we realized that "Bangers" was limited to uppercase letters, which could hinder readability, especially for younger audiences. This limitation prompted us to explore alternative fonts that would enhance the readability for users of all ages.
 
+<br>
+
+<img src="readmedocs/bangers-font.png" alt="font use" width="40%" height="40%">
+<br>
+
+
 After experimenting with several fonts, including "Poppins," "Figtree," and "Jost." Each font was evaluated for its clarity, legibility, and visual appeal. After thorough testing and consideration, we ultimately settled on "Jost." This font provided the perfect balance of readability and style, ensuring that our game remained accessible and engaging for Key Stage 3 students. Our careful selection process highlights the importance of choosing the right font to create an inclusive and effective user experience.
 
+<br>
+
+<img src="readmedocs/jost-font.png" alt="font use" width="60%" height="60%">
 <br>
 
 ### Images
 
 When selecting the background image for our game, we carefully considered various science-themed visuals to ensure they aligned with the educational and aesthetic goals of our project. We evaluated numerous images, focusing on those that would effectively convey the theme of science lab safety. After thorough consideration, we decided on a laboratory image that would be both appealing and fun for a younger audience. It was important to choose an image that was engaging without being overly childish, so we opted for a vector-based cartoon style graphic. This choice was made to reflect the core concept of the game, which revolves around understanding and identifying laboratory safety hazards. The laboratory image provides an appropriate context for the game's content, helping to immerse students in a realistic and relevant environment. This thoughtful selection process underscores our commitment to creating an engaging and educational experience for Key Stage 3 students.
 
-<img src="readmedocs/labbackground.webp" alt="Lab background image" width="40%" height="40%">
+<br>
+
+<img src="readmedocs/labbackground.webp" alt="Lab background image" width="50%" height="50%">
+
 <br>
 
 During the design process, we realized the importance of a unique and recognizable favicon to represent our game. After exploring various options, we found that there wasn't anything suitable that truly captured the essence of our project. As a result, we decided to create our own custom favicon. This allowed us to design a favicon that was perfectly aligned with our theme and aesthetic goals, ispecifically by adding a graphic of a pair of cards and the game initials. Our custom favicon not only enhances the visual identity of our game but also adds a professional touch to the overall user experience. The process of creating our own favicon ensured that we had a distinctive and memorable icon that stands out in users' browser tabs and bookmarks.
 
+<br>
+
 <img src="assets/images/FAVICONSS.png" alt="favicon image" width="20%" height="20%">
+
 <br>
 
 The selection of game cards was a critical part of our design process, ensuring that the content was both educational and engaging for students. We based our game cards on an image resource that depicted a grid of common science lab hazards. This comprehensive visual reference allowed us to choose relevant and recognizable hazards to include in the game. To enhance the learning experience, we decided to incorporate a "study first" modal, which would present the grid of hazards to students before they began playing. This modal provided a brief overview of the hazards, giving students an opportunity to memorise and familiarize themselves with the content and better understand what they would encounter on the game cards. Additionally, the card images would reflect the level of difficulty that the player selected, with the pairings varying based on the chosen difficulty level. By using this approach, we aimed to create an informative and interactive game that reinforces important lab safety concepts in an accessible and enjoyable way. Having different levels of difficulty meant that the game could appeal to older students who needed a more challenging study revision tool, catering to their advanced learning needs.
+<br>
 
-<img src="assets/images/hazards/corrosive-a.png" alt="corrosive a" width="20%" height="20%">
-<img src="assets/images/hazards/corrosive-b.png" alt="corrosive b" width="20%" height="20%">
-<img src="assets/images/hazards/corrosive-c.png" alt="corrosive c" width="20%" height="20%">
+<img src="readmedocs/paired-cards.png" alt="corrosive a" width="50%" height="50%">
+
+
 <br>
 
 ### Colours
 
 When selecting the color scheme for our game, we began with our vibrant background image as the starting point. We wanted colors that would complement the fun and engaging theme while providing sufficient contrast for readability. After careful consideration, we chose dark cyan (rgba(0, 139, 139, 0.85)) and orange (#FF8400), alongside black and white. The dark cyan and orange provided a striking yet harmonious contrast that stood out against the colorful backdrop. Black and white were used to ensure clarity and legibility without straying too far from the chosen color palette. This thoughtful selection of colors ensured that the game was visually appealing, easy to read, and cohesive with the overall design theme, enhancing the user experience for our players.
 
+<img src="readmedocs/dark-cyan.png" alt="dark cyan colours" width="50%" height="50%"><img src="readmedocs/orange.png" alt="orange colours" width="50%" height="50%">
 <br>
 
 ### Wireframes
@@ -174,7 +191,7 @@ When selecting the color scheme for our game, we began with our vibrant backgrou
 
 To ensure our educational card matching game is engaging, intuitive, and beneficial for Key Stage 3 students, we have incorporated a range of essential features based upon the study of user needs. These features are designed to enhance the overall user experience while aligning with the educational objectives of the game. We prioritized creating a clear and easy-to-understand game structure, making sure the game is responsive and visually appealing across various devices.
 
-Key functionalities include a shuffle function to randomize cards, a new game button for player control, and a grid of face-down cards to begin the matching process. We also included interactive elements such as a card flip function and feedback mechanisms like cards staying face-up when matched, a timer, a congratulatory alert when all pairs were matched, and a moves counter for tracking (and improving) progress. Additionally, the game offers different levels of difficulty, and accessible instructions to cater to diverse learning needs. These features collectively contribute to a fun, educational, and user-friendly game that effectively aids students in learning about science lab hazards.
+Key functionalities include a shuffle function to randomize cards, a new game button for player control, and a grid of face-down cards to begin the matching process. We also included interactive elements such as a card flip function and feedback mechanisms like cards staying face-up when matched, a timer, a congratulatory alert when all pairs were matched, and a moves counter for tracking (and improving) progress. At the final review it was decided that we would add a "glow" to each card the user hovered over to aid in identifying which card was about to be selected, and once a pair had been matched both cards would be given a coloured border so that on completion of the game the player could visually identify all the matches. Additionally, the game offers different levels of difficulty, and accessible instructions to cater to diverse learning needs. These features collectively contribute to a fun, educational, and user-friendly game that effectively aids students in learning about science lab hazards.
 <br>
 
 ### Instructions/Study First 
@@ -182,7 +199,7 @@ Key functionalities include a shuffle function to randomize cards, a new game bu
 To enhance the educational value of our game, we introduced a "study first" modal that players can access before starting the card game. This modal presents an infographic, allowing players to familiarize themselves with the content and know what to expect. This preparation step helps reinforce the learning objectives by giving students a chance to review the hazards beforehand. Additionally, we incorporated detailed instructions to guide players on how to navigate and play the game effectively. To further support their learning, we provided a link to the BBC Bitesize website, a valuable resource for additional revision. These features collectively ensure that players are well-prepared and supported throughout their learning journey.
 <br>
 
-<img src="readmedocs/instructions-new-font.png" alt="instructions modal" width="20%" height="20%">
+<img src="readmedocs/instructions-new-font.png" alt="instructions modal" width="30%" height="30%">
 
 ### Game board
 
@@ -197,26 +214,47 @@ Group a – symbols of hazards.
 Group b – the name (label) of each hazard symbol.
 Group c – the description of the risk posed by this hazard.
 
-The game has 3 difficulty levels.
+The game offers 3 levels of difficulty and the pairing combinations vary dependant upon each level: 
 Easy – Match the ‘Symbol’ to its corresponding ‘Label’.
 Medium – Match the ‘Symbol’ to the ‘Description of the risk’.
 Hard – Match the ‘Label’ to the ‘Description of the risk’.
 
+Subtle features added in the later stages of development includied: on hovering over a card (as well as the cursor change), a card a "glow" is visible to aid in identifying the current card that the player is selecting; and once a pair had been matched, both cards would be given a coloured border.
+
 <br>
-<img src="assets/images/hazards/corrosive-a.png" alt="Corrosive Symbol" width="20%" height="20%">
-<img src="assets/images/hazards/corrosive-b.png" alt="Corrosive Label" width="20%" height="20%">
-<img src="assets/images/hazards/corrosive-c.png" alt="Corrosive Description" width="20%" height="20%">
+<img src="assets/images/hazards/corrosive-a.png" alt="corrosive a" width="20%" height="20%">
+<img src="assets/images/hazards/corrosive-b.png" alt="corrosive b" width="20%" height="20%">
+<img src="assets/images/hazards/corrosive-c.png" alt="corrosive c" width="20%" height="20%">
+<img src="assets/images/question-mark-green.png" alt="green question mark back-face" width="20%" height="20%">
+
+<br>
+
+Subtle features added in the later stages of development includied: on hovering over a card (as well as the cursor change), a card a "glow" is visible to aid in identifying the current card that the player is selecting; and once a pair had been matched, both cards would be given a coloured border.
+
+<br>
+<img src="readmedocs/card-glow.png" alt="Card glow on hover" width="40%" height="40%">
+<img src="readmedocs/coloured-pairs.png" alt="Coloured border card pairs" width="50%" height="50%">
+<br>
 
 ### Buttons
 
 To enhance usability and streamline the game experience, we strategically placed centrally located buttons that served multiple functional purposes. These buttons included options to trigger a new game, allowing players to easily restart if needed. We also incorporated a level selection button, enabling users to choose different difficulty levels and tailor their experience to their learning needs. Additionally, we added a "study first" button, providing players with an opportunity to review the educational content before starting the game. By positioning these buttons centrally, we ensured that key functions were readily accessible and intuitive to use, contributing to a smooth and enjoyable user experience.
+
+<img src="readmedocs/difficulty-levels.png" alt="difficulty drop down menu" width="30%" height="30%">
+<img src="readmedocs/buttons.png" alt="Card glow on hover" width="70%" height="70%">
 <br>
 
 
 ### Scores
 To facilitate a more engaging and educational experience, we implemented several key features to help students monitor their progress and performance. We introduced counters to track the number of attempts and moves made by the players, as well as a timer to measure the time taken to complete the game. These metrics allow students to gauge their improvement over time and strategize more effectively, aiming to reduce errors with each playthrough and improve their speed while maintaining accuracy.
 
+
+<img src="readmedocs/Scores-bar.png" alt="scores bar" width="60%" height="60%">
+<br>
+
+
 Additionally, we added an alert to congratulate the player when they correctly match all pairs. This alert not only celebrates their achievement but also displays their stats, providing a motivating and rewarding element to the game. This combination of features creates a motivating and interactive learning environment where students can set personal goals and continually strive to better their previous records.
+
 
 <img src="readmedocs/Screenshot 2024-12-02 at 16.39.15.png" alt="Congratulations alert" width="40%" height="40%">
 <br>
@@ -259,7 +297,7 @@ By continuously updating the board and holding regular stand-ups, we maintained 
 
 Effective communication was pivotal to our project's success. Regularly attending huddles and actively using Slack messages ensured that all team members were informed and aligned on our progress and goals. This consistent communication allowed us to quickly address any issues, share updates, and collaborate efficiently. By maintaining open lines of communication, we were able to stay organized, make informed decisions, and ensure that everyone was on the same page, which ultimately led to a smooth and successful development process.
 
- The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. To ensure the website was functioning correctly and providing a seamless user experience, we implemented a process of regular deployments to our live environment. These frequent deployments allowed us to continuously monitor the site for any issues and promptly address them. By deploying updates incrementally, we could verify that new features and fixes were working as expected in a real-world setting. This proactive approach helped us maintain the site's performance and stability, ensuring that our educational tool remained reliable and effective for students and teachers alike.
+The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. To ensure the website was functioning correctly and providing a seamless user experience, we implemented a process of regular deployments to our live environment. These frequent deployments allowed us to continuously monitor the site for any issues and promptly address them. By deploying updates incrementally, we could verify that new features and fixes were working as expected in a real-world setting. This proactive approach helped us maintain the site's performance and stability, ensuring that our educational tool remained reliable and effective for students and teachers alike.
 <br>
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
