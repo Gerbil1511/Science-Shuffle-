@@ -219,6 +219,8 @@ To facilitate a more engaging and educational experience, we implemented several
 Additionally, we added an alert to congratulate the player when they correctly match all pairs. This alert not only celebrates their achievement but also displays their stats, providing a motivating and rewarding element to the game. This combination of features creates a motivating and interactive learning environment where students can set personal goals and continually strive to better their previous records.
 
 <img src="readmedocs/Screenshot 2024-12-02 at 16.39.15.png" alt="Congratulations alert" width="40%" height="40%">
+<br>
+
 
 ### Responsive Design
 
