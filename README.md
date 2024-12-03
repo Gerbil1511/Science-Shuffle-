@@ -424,6 +424,8 @@ There were a few warnings in JSHint, primarily related to the use of let or arro
 ### Acknowledgements
 
  A huge thank you to Mark, John and Dillon at Code Institute for their support and help, we truly appreciate it!
+ And to our family and friends who tested our deployments and gave great feeback, thank you so much!
+ Thank you to Sarah H for reaching out with a fix to one of our sizing problems, it was a huge help!
 
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
