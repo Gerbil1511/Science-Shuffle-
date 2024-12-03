@@ -265,7 +265,7 @@ Additionally, we added an alert to congratulate the player when they correctly m
 This card matching game was initially designed with tablet devices in mind, as it was primarily intended for use by school children as an interactive study guide. The layout and interface elements have been optimized for tablet screen sizes to ensure an engaging and user-friendly experience on these devices. While the game is functional on laptop screens, we acknowledge that the responsiveness for larger displays could be improved. Given more development time, our next priority would be to enhance the game's adaptability to laptop and desktop screen sizes, ensuring a seamless experience across a wider range of devices.
 <br>
 
-<img src="readmedocs/Responsive-design.png" alt="responsive design" width="50%" height="50%">
+<img src="readmedocs/Responsive-design.png" alt="responsive design" width="70%" height="70%">
 
 
 ### Future Features
@@ -413,29 +413,29 @@ Validation is a crucial aspect of the software development process, as it ensure
 #### Lighthouse
 The Lighthouse validation results proved to be pleasing - it recommended that our site served images in next-gen formats therefore reducing unused CSS.
 
-<img src="readmedocs/Screenshot 2024-12-02 at 16.33.45.png" alt="Lighthouse scores" width="50%" height="50%">
-<img src="readmedocs/lighthouse-desktop.png" alt="Lighthouse scores" width="50%" height="50%">
+<img src="readmedocs/Screenshot 2024-12-02 at 16.33.45.png" alt="Lighthouse scores" width="70%" height="70%">
+<img src="readmedocs/lighthouse-desktop.png" alt="Lighthouse scores" width="70%" height="70%">
 
 
 #### WAVE
 The results from the WAVE validation were pleasing, and suggested that there were no major contrast errors.
 
-<img src="readmedocs/Screenshot 2024-12-02 at 16.28.23.png" alt="WAVE validation results" width="20%" height="20%">
+<img src="readmedocs/Screenshot 2024-12-02 at 16.28.23.png" alt="WAVE validation results" width="40%" height="40%">
 
 #### W3C - HTML
 W3C Validator identified errors that where then corrected and finally zero errors but 5 ‘Warnings’ remain - these all refer to not having a heading in the section – it was agreed that headings are not required in the sections.
 
-<img src="readmedocs/W3C-validation-no-errors-5-warnings.png" alt="validation" width="50%" height="50%">
+<img src="readmedocs/W3C-validation-no-errors-5-warnings.png" alt="validation" width="70%" height="70%">
 
 #### W3C- CSS
 W3C CSS Validator identified no warnings or errors.
 
-<img src="readmedocs/W3C-CSS-validation-no-errors.png" alt="validation" width="50%" height="50%">
+<img src="readmedocs/W3C-CSS-validation-no-errors.png" alt="validation" width="70%" height="70%">
 
 ### JS Hint
 There were a few warnings in JSHint, primarily related to the use of let or arrow function syntax. These modern JavaScript features are sometimes unsupported or behave inconsistently in older browsers, such as certain versions of Mozilla Firefox. While these warnings highlight potential compatibility issues, they do not impact the core functionality of the game, as most modern browsers fully support these syntactical elements. 
 
-<img src="readmedocs/jshint-screenshot.png" alt="responsive design" width="50%" height="50%">
+<img src="readmedocs/jshint-screenshot.png" alt="responsive design" width="100%" height="100%">
 
 <br>
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
