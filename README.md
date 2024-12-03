@@ -1,6 +1,6 @@
 # Science Shuffle
 
-![Live Site](https://via.placeholder.com/468x300?text=Live+Site+Here)
+<img src="readmedocs/screenshot-hazards-game.png" alt="live site image" width="40%" height="40%">
 
 <p>
 | <a href="https://gerbil1511.github.io/Science-Shuffle/" target="_blank">Live Project</a> |
@@ -128,9 +128,10 @@ After experimenting with several fonts, including "Poppins," "Figtree," and "Jos
 
 ### Images
 
-<img src="readmedocs/images/labbackground.webp" alt="Lab background image" width="50%" height="50%">
+<img src="readmedocs/labbackground.webp" alt="Lab background image" width="40%" height="40%">
 
 <br>
+
 When selecting the background image for our game, we carefully considered various science-themed visuals to ensure they aligned with the educational and aesthetic goals of our project. We evaluated numerous images, focusing on those that would effectively convey the theme of science lab safety. After thorough consideration, we decided on a laboratory image that would be both appealing and fun for a younger audience. It was important to choose an image that was engaging without being overly childish, so we opted for a vector-based cartoon style graphic. This choice was made to reflect the core concept of the game, which revolves around understanding and identifying laboratory safety hazards. The laboratory image provides an appropriate context for the game's content, helping to immerse students in a realistic and relevant environment. This thoughtful selection process underscores our commitment to creating an engaging and educational experience for Key Stage 3 students.
 
 <br>
@@ -153,17 +154,17 @@ When selecting the color scheme for our game, we began with our vibrant backgrou
 
 - Mobile
 
-<img src="readmedocs/wireframes/Hazards-Match-Mobile-Wirefame.png" alt="Mobile wireframe" width="25%" height="25%">
+<img src="readmedocs/Hazards-Match-Mobile-Wirefame.png" alt="Mobile wireframe" width="25%" height="25%">
 <br>
 
 - Tablet
 
-<img src="readmedocs/wireframes/Hazards-Match-Tablet-Wireframe.png" alt="Tablet wireframe" width="30%" height="30%">
+<img src="readmedocs/Hazards-Match-Tablet- Wireframe.png" alt="Tablet wireframe" width="30%" height="30%">
 <br>
 
 - Desktop
 
-<img src="readmedocs/wireframes/Hazards-Match-Desktop-Wirefame.png" alt="Desktop wireframe" width="60%" height="60%">
+<img src="readmedocs/Hazards-Match-Desktop-Wirefame.png" alt="Desktop wireframe" width="60%" height="60%">
 <br>
 <br>
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
@@ -180,14 +181,14 @@ Key functionalities include a shuffle function to randomize cards, a new game bu
 To enhance the educational value of our game, we introduced a "study first" modal that players can access before starting the card game. This modal presents an infographic, allowing players to familiarize themselves with the content and know what to expect. This preparation step helps reinforce the learning objectives by giving students a chance to review the hazards beforehand. Additionally, we incorporated detailed instructions to guide players on how to navigate and play the game effectively. To further support their learning, we provided a link to the BBC Bitesize website, a valuable resource for additional revision. These features collectively ensure that players are well-prepared and supported throughout their learning journey.
 <br>
 
-<img src="readmedocs/instructions.png" alt="Corrosive Symbol" width="20%" height="20%">
+<img src="readmedocs/instructions-new-font.png" alt="instructions modal" width="20%" height="20%">
 
 ### Game board
 
 When deciding the format of the game board, we prioritized ease of navigation and user familiarity. After considering various options, we opted for a 4x4 layout, which is intuitive and straightforward for players of all ages. This format ensures that the game remains accessible and engaging without overwhelming the user. Additionally, we adopted a tablet-first design approach to cater to the growing number of students using this go-to device school laboratories. This strategy ensured that the game board was optimized for touch interactions and provided a seamless experience across different devices. 
 <br>
 
-<img src="readmedocs/gameboard.png" alt="Corrosive Symbol" width="20%" height="20%">
+<img src="readmedocs/screenshot-hazards-game.png" alt="gameboard image" width="30%" height="30%">
 
 ### Game Cards
 The selection and design of our game cards were central to creating an educational and engaging experience for players. They consisted of 3 game cards that correspond as follows:
@@ -216,11 +217,12 @@ To facilitate a more engaging and educational experience, we implemented several
 
 Additionally, we added an alert to congratulate the player when they correctly match all pairs. This alert not only celebrates their achievement but also displays their stats, providing a motivating and rewarding element to the game. This combination of features creates a motivating and interactive learning environment where students can set personal goals and continually strive to better their previous records.
 
-<img src="readmedocs/congratulations.png" alt="Congratulations alert" width="40%" height="40%">
+<img src="readmedocs/Screenshot 2024-12-02 at 16.39.15.png" alt="Congratulations alert" width="40%" height="40%">
 
 ### Responsive Design
 
-
+This card matching game was initially designed with tablet devices in mind, as it was primarily intended for use by school children as an interactive study guide. The layout and interface elements have been optimized for tablet screen sizes to ensure an engaging and user-friendly experience on these devices. While the game is functional on laptop screens, we acknowledge that the responsiveness for larger displays could be improved. Given more development time, our next priority would be to enhance the game's adaptability to laptop and desktop screen sizes, ensuring a seamless experience across a wider range of devices.
+<br>
 
 <img src="readmedocs/Responsive-design.png" alt="responsive design" width="50%" height="50%">
 
@@ -255,6 +257,21 @@ By continuously updating the board and holding regular stand-ups, we maintained 
 Effective communication was pivotal to our project's success. Regularly attending huddles and actively using Slack messages ensured that all team members were informed and aligned on our progress and goals. This consistent communication allowed us to quickly address any issues, share updates, and collaborate efficiently. By maintaining open lines of communication, we were able to stay organized, make informed decisions, and ensure that everyone was on the same page, which ultimately led to a smooth and successful development process.
 
  The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. To ensure the website was functioning correctly and providing a seamless user experience, we implemented a process of regular deployments to our live environment. These frequent deployments allowed us to continuously monitor the site for any issues and promptly address them. By deploying updates incrementally, we could verify that new features and fixes were working as expected in a real-world setting. This proactive approach helped us maintain the site's performance and stability, ensuring that our educational tool remained reliable and effective for students and teachers alike.
+<br>
+
+<p align="right"><a href="#science-shuffle">Back To Top</a></p>
+
+## Tech
+
+### Languages 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+### Frameworks and Libraries
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+### Software and Tools 
+![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white) ![GitHub Copilot](https://img.shields.io/badge/github_copilot-8957E5?style=for-the-badge&logo=github-copilot&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white) ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
+
 <br>
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
@@ -353,15 +370,25 @@ Validation is a crucial aspect of the software development process, as it ensure
 <br>
 
 #### Lighthouse
+The Lighthouse validation results proved to be pleasing - it recommended that our site served images in next-gen formats therefore reducing unused CSS.
+
+<img src="readmedocs/Screenshot 2024-12-02 at 16.33.45.png" alt="Lighthouse scores" width="50%" height="50%">
+<img src="readmedocs/lighthouse-desktop.png" alt="Lighthouse scores" width="50%" height="50%">
+
 
 #### WAVE
+The results from the WAVE validation were pleasing, and suggested that there were no major contrast errors.
+
+<img src="readmedocs/Screenshot 2024-12-02 at 16.28.23.png" alt="WAVE validation results" width="20%" height="20%">
 
 #### W3C - HTML
 W3C Validator identified errors that where then corrected and finally zero errors but 5 ‘Warnings’ remain - these all refer to not having a heading in the section – it was agreed that headings are not required in the sections.
-<img src="readmedocs/W3C-validation-no-errors-5-warnings" alt="validation" width="50%" height="50%">
+
+<img src="readmedocs/W3C-validation-no-errors-5-warnings.png" alt="validation" width="50%" height="50%">
 
 #### W3C- CSS
 W3C CSS Validator identified no warnings or errors.
+
 <img src="readmedocs/W3C-CSS-validation-no-errors.png" alt="validation" width="50%" height="50%">
 
 ### JS Hint
