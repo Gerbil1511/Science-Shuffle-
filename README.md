@@ -404,23 +404,55 @@ There were a few warnings in JSHint, primarily related to the use of let or arro
 
 ### Credits
 
- Readme.md
-  - [Awesome README](https://github.com/matiassingers/awesome-readme)
-  - [README file generator/editor](https://www.readme.so)
-  - [Code Institute readme tutorial ](https://www.youtube.com/watch?si=YlDWOkkzvTBjbgs3&v=l1DE7L-4eKQ&feature=youtu.be)
-  - [README.md example](https://github.com/TheRickyroy/astronauts-for-autism/blob/main/README.md#tools-and-programs)
-  - [Badges](https://github.com/Ileriayo/markdown-badges)
+### README
+<br>
+
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [README file generator/editor](https://www.readme.so)
+- [Code Institute readme tutorial ](https://www.youtube.com/watch?si=YlDWOkkzvTBjbgs3&v=l1DE7L-4eKQ&feature=youtu.be)
+- [README.md example](https://github.com/TheRickyroy/astronauts-for-autism/blob/main/README.md#tools-and-programs)
+- [Badges](https://github.com/Ileriayo/markdown-badges)
+<br>
+
+### FONTS
+<br>
+
+- Font readability -https://fonts.google.com/knowledge/readability_and_accessibility/how_type_influences_readability
+- Some example font pairings, such as Prompt, Cabin, Raleway, etc - https://www.figma.com/google-fonts
+<br>
+
+### COLOURS
+<br>
+
+- https://colorhunt.co/palettes/kids
+- https://coolors.co/palettes/popular/kids
+- https://colorkit.co/background-maker/1982c4-8ac926/
+- https://www.freepik.com/author/jcomp
+<br>
+
+### IMAGERY
+<br>
+
+- Interactive periodic table - https://artsexperiments.withgoogle.com/periodic-table/
+- 118-element-infographics-RSC https://www.rsc.org/iypt/iypt-elements/?utm_source=rsc-periodic-table-site&utm_medium=referral&utm_content=iypt-banner
+- https://www.istockphoto.com/ images of atoms - Todd Helmenstine. Todd Helmenstine is the physicist/mathematician who creates most of the images found on sciencenotes.org. The graphics are created in Adobe Illustrator, Fireworks and Photoshop.
+- Question mark cards attribution line “Designed by Freepik” www.freepik.com
+- Periodic-table-KS3.jpg – www.pintrest.com
+- Image compressor - https://www.freeconvert.com/image-compressor
+- https://www.vecteezy.com Vectors by Vecteezy
+- https://image.online-convert.com/convert/word-to-svg converts graphics produced on MS Word into svg
+- http://www.cloudinary.com
+- https://inkscape.org/release/inkscape-1.3.2/
+- https://www.freepik.com/free-vector/science-lab-flat-style_7431195.htm#fromView=keyword&page=1&position=52&uuid=fcd0cba6-7fb7-486b-ace7-8e7999b3cc9f
+- https://www.freepik.com/author/brgfx
 
 
- Content
-  - [Interactive Periodic Table](https://artsexperiments.withgoogle.com/periodic-table/)
-  - [Periodic Table KS3](https://www.pintrest.com)
-  - [GHS warning sign icon vector set illustration stock illustration](https://https://www.istockphoto.com/vector/ghs-warning-sign-icon-vector-set-illustration-gm1400116370-453793774?searchscope=image%2Cfilm) 
-  - [Font Readability](https://fonts.google.com/knowledge/readability_and_accessibility/how_type_influences_readability)
-  - ![Memory Game in Vanilla Javascript](https://marina-ferreira.github.io/tutorials/js/memory-game/)
-  - ![Build Your Own Memory Card Game with HTML, CSS, and JavaScript - Beginner-Friendly Tutorial](https://https://www.youtube.com/watch?v=xWdkt6KSirw)
-  - ![How to Create Memory Game in JavaScript](https://www.youtube.com/watch?v=M0egyNvsN-Y)
-  
+### RESPONSIVE DEVICE IMAGES
+
+- https://ui.dev/amiresponsive
+- https://websitemockupgenerator.com
+
+
 ### Acknowledgements
 
  A huge thank you to Mark, John and Dillon at Code Institute for their support and help, we truly appreciate it!
