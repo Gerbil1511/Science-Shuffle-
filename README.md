@@ -128,20 +128,21 @@ After experimenting with several fonts, including "Poppins," "Figtree," and "Jos
 
 ### Images
 
-<img src="readmedocs/labbackground.webp" alt="Lab background image" width="40%" height="40%">
-
-<br>
-
 When selecting the background image for our game, we carefully considered various science-themed visuals to ensure they aligned with the educational and aesthetic goals of our project. We evaluated numerous images, focusing on those that would effectively convey the theme of science lab safety. After thorough consideration, we decided on a laboratory image that would be both appealing and fun for a younger audience. It was important to choose an image that was engaging without being overly childish, so we opted for a vector-based cartoon style graphic. This choice was made to reflect the core concept of the game, which revolves around understanding and identifying laboratory safety hazards. The laboratory image provides an appropriate context for the game's content, helping to immerse students in a realistic and relevant environment. This thoughtful selection process underscores our commitment to creating an engaging and educational experience for Key Stage 3 students.
 
+<img src="readmedocs/labbackground.webp" alt="Lab background image" width="40%" height="40%">
 <br>
 
-During the design process, we realized the importance of a unique and recognizable favicon to represent our game. After exploring various options, we found that there wasn't anything suitable that truly captured the essence of our project. As a result, we decided to create our own custom favicon. This allowed us to design a favicon that was perfectly aligned with our theme and aesthetic goals. Our custom favicon not only enhances the visual identity of our game but also adds a professional touch to the overall user experience. The process of creating our own favicon ensured that we had a distinctive and memorable icon that stands out in users' browser tabs and bookmarks.
+During the design process, we realized the importance of a unique and recognizable favicon to represent our game. After exploring various options, we found that there wasn't anything suitable that truly captured the essence of our project. As a result, we decided to create our own custom favicon. This allowed us to design a favicon that was perfectly aligned with our theme and aesthetic goals, ispecifically by adding a graphic of a pair of cards and the game initials. Our custom favicon not only enhances the visual identity of our game but also adds a professional touch to the overall user experience. The process of creating our own favicon ensured that we had a distinctive and memorable icon that stands out in users' browser tabs and bookmarks.
 
+<img src="assets/images/FAVICONSS.png" alt="favicon image" width="20%" height="20%">
 <br>
 
 The selection of game cards was a critical part of our design process, ensuring that the content was both educational and engaging for students. We based our game cards on an image resource that depicted a grid of common science lab hazards. This comprehensive visual reference allowed us to choose relevant and recognizable hazards to include in the game. To enhance the learning experience, we decided to incorporate a "study first" modal, which would present the grid of hazards to students before they began playing. This modal provided a brief overview of the hazards, giving students an opportunity to memorise and familiarize themselves with the content and better understand what they would encounter on the game cards. Additionally, the card images would reflect the level of difficulty that the player selected, with the pairings varying based on the chosen difficulty level. By using this approach, we aimed to create an informative and interactive game that reinforces important lab safety concepts in an accessible and enjoyable way. Having different levels of difficulty meant that the game could appeal to older students who needed a more challenging study revision tool, catering to their advanced learning needs.
 
+<img src="assets/images/hazards/corrosive-a.png" alt="corrosive a" width="20%" height="20%">
+<img src="assets/images/hazards/corrosive-b.png" alt="corrosive b" width="20%" height="20%">
+<img src="assets/images/hazards/corrosive-c.png" alt="corrosive c" width="20%" height="20%">
 <br>
 
 ### Colours
