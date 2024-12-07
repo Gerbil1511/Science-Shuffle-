@@ -297,7 +297,6 @@ By continuously updating the board and holding regular stand-ups, we maintained 
 
 Effective communication was pivotal to our project's success. Regularly attending huddles and actively using Slack messages ensured that all team members were informed and aligned on our progress and goals. This consistent communication allowed us to quickly address any issues, share updates, and collaborate efficiently. By maintaining open lines of communication, we were able to stay organized, make informed decisions, and ensure that everyone was on the same page, which ultimately led to a smooth and successful development process.
 
-The deployment process was coordinated to ensure the website was hosted on the GitHub platform without any issues. To ensure the website was functioning correctly and providing a seamless user experience, we implemented a process of regular deployments to our live environment. These frequent deployments allowed us to continuously monitor the site for any issues and promptly address them. By deploying updates incrementally, we could verify that new features and fixes were working as expected in a real-world setting. This proactive approach helped us maintain the site's performance and stability, ensuring that our educational tool remained reliable and effective for students and teachers alike.
 <br>
 
 <p align="right"><a href="#science-shuffle">Back To Top</a></p>
