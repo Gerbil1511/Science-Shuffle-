@@ -1,8 +1,8 @@
 # Science Shuffle
 
-<img src="readmedocs/screenshot-hazards-game.png" alt="live site image" width="40%" height="40%">
+<img src="readmedocs/responsive-devices.png" alt="live site image">
 
-<p>
+<p align="center">
 | <a href="https://gerbil1511.github.io/Science-Shuffle/" target="_blank">Live Project</a> |
 </p>
 
