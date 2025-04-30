@@ -3,7 +3,7 @@
 <img src="readmedocs/responsive-devices.png" alt="live site image">
 
 <p align="center">
-| <a href="https://gerbil1511.github.io/Science-Shuffle/" target="_blank">Live Project</a> |
+| <a href="https://geraldine-edwards.github.io/Science-Shuffle-/" target="_blank">Live Project</a> |
 </p>
 
 
